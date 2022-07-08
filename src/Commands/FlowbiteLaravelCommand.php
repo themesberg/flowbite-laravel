@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Flowbite\FlowbiteLaravel\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FlowbiteLaravelCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'flowbite-laravel';
 
     public $description = 'My command';
 
