@@ -2,14 +2,12 @@
 
 namespace Flowbite\FlowbiteLaravel;
 
+use Flowbite\FlowbiteLaravel\Commands\FlowbiteLaravelCommand;
 use Flowbite\FlowbiteLaravel\View\Components\Input;
 use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
 use Illuminate\View\Compilers\BladeCompiler;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Flowbite\FlowbiteLaravel\Commands\FlowbiteLaravelCommand;
 
 class FlowbiteLaravelServiceProvider extends PackageServiceProvider
 {
@@ -38,7 +36,7 @@ class FlowbiteLaravelServiceProvider extends PackageServiceProvider
     protected function configureComponents()
     {
         $this->callAfterResolving(BladeCompiler::class, function () {
-            $this->registerComponent('input','input.index');
+            $this->registerComponent('input', 'input.index');
             //$this->registerComponent('input.floated');
         });
     }
@@ -51,8 +49,8 @@ class FlowbiteLaravelServiceProvider extends PackageServiceProvider
      */
     protected function registerComponent(string $component, ?string $file = null)
     {
-        $prefix = config('flowbite-laravel.prefix','');
-        if(!empty($prefix)){
+        $prefix = config('flowbite-laravel.prefix', '');
+        if (! empty($prefix)) {
             $prefix .= "-";
         }
         Blade::component('flowbite-laravel::components.'.($file ?? $component), $prefix.$component);
