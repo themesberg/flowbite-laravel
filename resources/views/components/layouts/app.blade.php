@@ -104,6 +104,16 @@
             <li><a href="/docs/kbd" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">KBD</a></li>
             <li><a href="/docs/stepper" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Stepper</a></li>
             <li><a href="/docs/video" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Video</a></li>
+
+            {{-- Blocks --}}
+            <li class="pt-4">
+                <span class="px-3 text-xs font-semibold text-gray-500 uppercase dark:text-gray-400">Blocks</span>
+            </li>
+            <li><a href="/blocks/admin-layout" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Admin Layout</a></li>
+            <li><a href="/blocks/login" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Login</a></li>
+            <li><a href="/blocks/register" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Register</a></li>
+            <li><a href="/blocks/forgot-password" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Forgot Password</a></li>
+            <li><a href="/blocks/reset-password" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Reset Password</a></li>
         </ul>
     </div>
 </aside>

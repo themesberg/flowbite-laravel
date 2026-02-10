@@ -69,3 +69,10 @@ Route::get('/docs/banner', fn () => view('docs.banner'));
 Route::get('/docs/kbd', fn () => view('docs.kbd'));
 Route::get('/docs/stepper', fn () => view('docs.stepper'));
 Route::get('/docs/video', fn () => view('docs.video'));
+
+// Blocks
+Route::get('/blocks/admin-layout', fn () => view('blocks.admin-layout'));
+Route::get('/blocks/login', fn () => view('blocks.login'));
+Route::get('/blocks/register', fn () => view('blocks.register'));
+Route::get('/blocks/forgot-password', fn () => view('blocks.forgot-password'));
+Route::get('/blocks/reset-password', fn () => view('blocks.reset-password'));
