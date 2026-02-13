@@ -76,3 +76,43 @@ Route::get('/blocks/login', fn () => view('blocks.login'));
 Route::get('/blocks/register', fn () => view('blocks.register'));
 Route::get('/blocks/forgot-password', fn () => view('blocks.forgot-password'));
 Route::get('/blocks/reset-password', fn () => view('blocks.reset-password'));
+
+// Blocks — Marketing UI
+Route::get('/blocks/marketing/hero', fn () => view('blocks.marketing.hero'));
+Route::get('/blocks/marketing/feature', fn () => view('blocks.marketing.feature'));
+Route::get('/blocks/marketing/cta', fn () => view('blocks.marketing.cta'));
+Route::get('/blocks/marketing/content', fn () => view('blocks.marketing.content'));
+Route::get('/blocks/marketing/header', fn () => view('blocks.marketing.header'));
+Route::get('/blocks/marketing/team', fn () => view('blocks.marketing.team'));
+Route::get('/blocks/marketing/pricing', fn () => view('blocks.marketing.pricing'));
+Route::get('/blocks/marketing/footer', fn () => view('blocks.marketing.footer'));
+Route::get('/blocks/marketing/social-proof', fn () => view('blocks.marketing.social-proof'));
+Route::get('/blocks/marketing/contact-form', fn () => view('blocks.marketing.contact-form'));
+Route::get('/blocks/marketing/auth-forms', fn () => view('blocks.marketing.auth-forms'));
+Route::get('/blocks/marketing/faq', fn () => view('blocks.marketing.faq'));
+Route::get('/blocks/marketing/testimonial', fn () => view('blocks.marketing.testimonial'));
+Route::get('/blocks/marketing/newsletter', fn () => view('blocks.marketing.newsletter'));
+Route::get('/blocks/marketing/blog', fn () => view('blocks.marketing.blog'));
+Route::get('/blocks/marketing/error-pages', fn () => view('blocks.marketing.error-pages'));
+
+// Blocks — Application UI
+Route::get('/blocks/application/table-header', fn () => view('blocks.application.table-header'));
+Route::get('/blocks/application/navigation', fn () => view('blocks.application.navigation'));
+Route::get('/blocks/application/filter', fn () => view('blocks.application.filter'));
+Route::get('/blocks/application/crud-modals', fn () => view('blocks.application.crud-modals'));
+Route::get('/blocks/application/crud-drawers', fn () => view('blocks.application.crud-drawers'));
+Route::get('/blocks/application/crud-forms', fn () => view('blocks.application.crud-forms'));
+Route::get('/blocks/application/crud-tables', fn () => view('blocks.application.crud-tables'));
+
+// Blocks — E-commerce UI
+Route::get('/blocks/ecommerce/storefront', fn () => view('blocks.ecommerce.storefront'));
+Route::get('/blocks/ecommerce/products', fn () => view('blocks.ecommerce.products'));
+Route::get('/blocks/ecommerce/cart', fn () => view('blocks.ecommerce.cart'));
+Route::get('/blocks/ecommerce/checkout', fn () => view('blocks.ecommerce.checkout'));
+Route::get('/blocks/ecommerce/orders', fn () => view('blocks.ecommerce.orders'));
+Route::get('/blocks/ecommerce/account', fn () => view('blocks.ecommerce.account'));
+Route::get('/blocks/ecommerce/services', fn () => view('blocks.ecommerce.services'));
+
+// Blocks — Publisher UI
+Route::get('/blocks/publisher/blog-template', fn () => view('blocks.publisher.blog-template'));
+Route::get('/blocks/publisher/comments', fn () => view('blocks.publisher.comments'));

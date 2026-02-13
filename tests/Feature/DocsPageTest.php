@@ -70,6 +70,48 @@ class DocsPageTest extends TestCase
             'kbd' => ['/docs/kbd'],
             'stepper' => ['/docs/stepper'],
             'video' => ['/docs/video'],
+            // Blocks — Existing
+            'blocks-admin-layout' => ['/blocks/admin-layout'],
+            'blocks-login' => ['/blocks/login'],
+            'blocks-register' => ['/blocks/register'],
+            'blocks-forgot-password' => ['/blocks/forgot-password'],
+            'blocks-reset-password' => ['/blocks/reset-password'],
+            // Blocks — Marketing UI
+            'blocks-marketing-hero' => ['/blocks/marketing/hero'],
+            'blocks-marketing-feature' => ['/blocks/marketing/feature'],
+            'blocks-marketing-cta' => ['/blocks/marketing/cta'],
+            'blocks-marketing-content' => ['/blocks/marketing/content'],
+            'blocks-marketing-header' => ['/blocks/marketing/header'],
+            'blocks-marketing-team' => ['/blocks/marketing/team'],
+            'blocks-marketing-pricing' => ['/blocks/marketing/pricing'],
+            'blocks-marketing-footer' => ['/blocks/marketing/footer'],
+            'blocks-marketing-social-proof' => ['/blocks/marketing/social-proof'],
+            'blocks-marketing-contact-form' => ['/blocks/marketing/contact-form'],
+            'blocks-marketing-auth-forms' => ['/blocks/marketing/auth-forms'],
+            'blocks-marketing-faq' => ['/blocks/marketing/faq'],
+            'blocks-marketing-testimonial' => ['/blocks/marketing/testimonial'],
+            'blocks-marketing-newsletter' => ['/blocks/marketing/newsletter'],
+            'blocks-marketing-blog' => ['/blocks/marketing/blog'],
+            'blocks-marketing-error-pages' => ['/blocks/marketing/error-pages'],
+            // Blocks — Application UI
+            'blocks-application-table-header' => ['/blocks/application/table-header'],
+            'blocks-application-navigation' => ['/blocks/application/navigation'],
+            'blocks-application-filter' => ['/blocks/application/filter'],
+            'blocks-application-crud-modals' => ['/blocks/application/crud-modals'],
+            'blocks-application-crud-drawers' => ['/blocks/application/crud-drawers'],
+            'blocks-application-crud-forms' => ['/blocks/application/crud-forms'],
+            'blocks-application-crud-tables' => ['/blocks/application/crud-tables'],
+            // Blocks — E-commerce UI
+            'blocks-ecommerce-storefront' => ['/blocks/ecommerce/storefront'],
+            'blocks-ecommerce-products' => ['/blocks/ecommerce/products'],
+            'blocks-ecommerce-cart' => ['/blocks/ecommerce/cart'],
+            'blocks-ecommerce-checkout' => ['/blocks/ecommerce/checkout'],
+            'blocks-ecommerce-orders' => ['/blocks/ecommerce/orders'],
+            'blocks-ecommerce-account' => ['/blocks/ecommerce/account'],
+            'blocks-ecommerce-services' => ['/blocks/ecommerce/services'],
+            // Blocks — Publisher UI
+            'blocks-publisher-blog-template' => ['/blocks/publisher/blog-template'],
+            'blocks-publisher-comments' => ['/blocks/publisher/comments'],
         ];
     }
 }

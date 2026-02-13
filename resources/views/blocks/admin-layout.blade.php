@@ -4,36 +4,41 @@
 
     @php
     $code = <<<'BLADE'
-    <x-fwb.layouts.admin title="Dashboard">
-        <div class="p-4">
-            <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Dashboard</h1>
-            <p class="mt-2 text-gray-500 dark:text-gray-400">Welcome to the admin panel.</p>
+<div class="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg">
+    <div class="flex items-center justify-between mb-4 p-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+        <span class="text-lg font-semibold text-gray-900 dark:text-white">Dashboard</span>
+        <div class="flex items-center gap-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Admin User</span>
         </div>
-    </x-fwb.layouts.admin>
-    BLADE;
-    @endphp
-    <x-preview :code="$code" title="Basic Usage" />
-
-    @php
-    $code2 = <<<'BLADE'
-    <x-fwb.layouts.admin title="Custom Sidebar">
-        <x-slot name="sidebarNav">
-            <ul class="space-y-2 font-medium">
-                <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <span class="ms-3">Custom Menu Item</span>
-                    </a>
-                </li>
+    </div>
+    <div class="flex gap-4">
+        <div class="w-48 p-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <li class="font-medium text-gray-900 dark:text-white">Dashboard</li>
+                <li>Users</li>
+                <li>Products</li>
+                <li>Settings</li>
             </ul>
-        </x-slot>
-
-        <div class="p-4">
-            <p>Content with custom sidebar navigation.</p>
         </div>
-    </x-fwb.layouts.admin>
-    BLADE;
+        <div class="flex-1 p-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h2 class="text-lg font-bold text-gray-900 dark:text-white">Welcome</h2>
+            <p class="mt-2 text-gray-500 dark:text-gray-400">This is the main content area of the admin layout.</p>
+        </div>
+    </div>
+</div>
+BLADE;
     @endphp
-    <x-preview :code="$code2" title="Custom Sidebar Navigation" />
+    <x-preview :code="$code" title="Layout Preview" />
+
+    <div class="mb-12">
+        <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">Usage</h2>
+        <p class="mb-4 text-gray-500 dark:text-gray-400">Use the admin layout as a full-page wrapper:</p>
+        <pre class="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-sm overflow-x-auto text-gray-800 dark:text-gray-200"><code>&lt;x-fwb.layouts.admin title="Dashboard"&gt;
+    &lt;div class="p-4"&gt;
+        &lt;h1&gt;Dashboard content&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/x-fwb.layouts.admin&gt;</code></pre>
+    </div>
 
     <div class="mb-12">
         <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">Properties</h2>

@@ -114,6 +114,78 @@
             <li><a href="/blocks/register" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Register</a></li>
             <li><a href="/blocks/forgot-password" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Forgot Password</a></li>
             <li><a href="/blocks/reset-password" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Reset Password</a></li>
+
+            {{-- Marketing UI Blocks --}}
+            <li class="pt-2">
+                <button type="button" class="flex items-center w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm" aria-controls="sidebar-marketing" data-collapse-toggle="sidebar-marketing">
+                    <span class="flex-1 text-left text-xs font-semibold text-gray-500 uppercase dark:text-gray-400">Marketing UI</span>
+                    <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                </button>
+                <ul id="sidebar-marketing" class="hidden space-y-1 py-1">
+                    <li><a href="/blocks/marketing/hero" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Hero Sections</a></li>
+                    <li><a href="/blocks/marketing/feature" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Feature</a></li>
+                    <li><a href="/blocks/marketing/cta" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">CTA Sections</a></li>
+                    <li><a href="/blocks/marketing/content" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Content</a></li>
+                    <li><a href="/blocks/marketing/header" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Header</a></li>
+                    <li><a href="/blocks/marketing/team" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Team</a></li>
+                    <li><a href="/blocks/marketing/pricing" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Pricing</a></li>
+                    <li><a href="/blocks/marketing/footer" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Footer</a></li>
+                    <li><a href="/blocks/marketing/social-proof" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Social Proof</a></li>
+                    <li><a href="/blocks/marketing/contact-form" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Contact Form</a></li>
+                    <li><a href="/blocks/marketing/auth-forms" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Auth Forms</a></li>
+                    <li><a href="/blocks/marketing/faq" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">FAQ</a></li>
+                    <li><a href="/blocks/marketing/testimonial" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Testimonial</a></li>
+                    <li><a href="/blocks/marketing/newsletter" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Newsletter & Banner</a></li>
+                    <li><a href="/blocks/marketing/blog" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Blog & Portfolio</a></li>
+                    <li><a href="/blocks/marketing/error-pages" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Error Pages</a></li>
+                </ul>
+            </li>
+
+            {{-- Application UI Blocks --}}
+            <li class="pt-2">
+                <button type="button" class="flex items-center w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm" aria-controls="sidebar-application" data-collapse-toggle="sidebar-application">
+                    <span class="flex-1 text-left text-xs font-semibold text-gray-500 uppercase dark:text-gray-400">Application UI</span>
+                    <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                </button>
+                <ul id="sidebar-application" class="hidden space-y-1 py-1">
+                    <li><a href="/blocks/application/table-header" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Table Headers</a></li>
+                    <li><a href="/blocks/application/navigation" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Navigation</a></li>
+                    <li><a href="/blocks/application/filter" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Filters</a></li>
+                    <li><a href="/blocks/application/crud-modals" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">CRUD Modals</a></li>
+                    <li><a href="/blocks/application/crud-drawers" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">CRUD Drawers</a></li>
+                    <li><a href="/blocks/application/crud-forms" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">CRUD Forms</a></li>
+                    <li><a href="/blocks/application/crud-tables" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">CRUD Tables</a></li>
+                </ul>
+            </li>
+
+            {{-- E-commerce UI Blocks --}}
+            <li class="pt-2">
+                <button type="button" class="flex items-center w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm" aria-controls="sidebar-ecommerce" data-collapse-toggle="sidebar-ecommerce">
+                    <span class="flex-1 text-left text-xs font-semibold text-gray-500 uppercase dark:text-gray-400">E-commerce UI</span>
+                    <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                </button>
+                <ul id="sidebar-ecommerce" class="hidden space-y-1 py-1">
+                    <li><a href="/blocks/ecommerce/storefront" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Storefront</a></li>
+                    <li><a href="/blocks/ecommerce/products" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Products</a></li>
+                    <li><a href="/blocks/ecommerce/cart" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Cart & Summary</a></li>
+                    <li><a href="/blocks/ecommerce/checkout" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Checkout & Payment</a></li>
+                    <li><a href="/blocks/ecommerce/orders" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Orders</a></li>
+                    <li><a href="/blocks/ecommerce/account" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Account</a></li>
+                    <li><a href="/blocks/ecommerce/services" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Services & Refunds</a></li>
+                </ul>
+            </li>
+
+            {{-- Publisher UI Blocks --}}
+            <li class="pt-2">
+                <button type="button" class="flex items-center w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm" aria-controls="sidebar-publisher" data-collapse-toggle="sidebar-publisher">
+                    <span class="flex-1 text-left text-xs font-semibold text-gray-500 uppercase dark:text-gray-400">Publisher UI</span>
+                    <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                </button>
+                <ul id="sidebar-publisher" class="hidden space-y-1 py-1">
+                    <li><a href="/blocks/publisher/blog-template" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Blog Template</a></li>
+                    <li><a href="/blocks/publisher/comments" class="flex items-center p-2 pl-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Comments</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </aside>
