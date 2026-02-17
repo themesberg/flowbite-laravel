@@ -42,7 +42,7 @@ BLADE;
     {{-- With Label Inside --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.progress :value="45" size="lg" />
+<x-fwb.progress :value="45" inside-label="45%" />
 BLADE;
     @endphp
     <x-preview :code="$code" title="Label Inside" />
@@ -50,7 +50,7 @@ BLADE;
     {{-- With Label Outside --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.progress :value="45" label="Flowbite" />
+<x-fwb.progress :value="45" outside-label="Flowbite" />
 BLADE;
     @endphp
     <x-preview :code="$code" title="Label Outside" />
@@ -96,11 +96,11 @@ BLADE;
     @php
     $code = <<<'BLADE'
 <div class="space-y-4">
-    <x-fwb.progress :value="0" label="Starting" />
-    <x-fwb.progress :value="25" label="Quarter" />
-    <x-fwb.progress :value="50" label="Half" />
-    <x-fwb.progress :value="75" label="Three Quarters" />
-    <x-fwb.progress :value="100" label="Complete" color="green" />
+    <x-fwb.progress :value="0" outside-label="Starting" />
+    <x-fwb.progress :value="25" outside-label="Quarter" />
+    <x-fwb.progress :value="50" outside-label="Half" />
+    <x-fwb.progress :value="75" outside-label="Three Quarters" />
+    <x-fwb.progress :value="100" outside-label="Complete" color="green" />
 </div>
 BLADE;
     @endphp
@@ -144,13 +144,19 @@ BLADE;
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">size</td>
                         <td class="px-6 py-4">string</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">md</code></td>
-                        <td class="px-6 py-4">Bar height size. Options: <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">xs</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">sm</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">md</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">lg</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">xl</code>. The lg and xl sizes display the percentage inside the bar.</td>
+                        <td class="px-6 py-4">Bar height size. Options: <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">xs</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">sm</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">md</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">lg</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">xl</code>.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">label</td>
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">outside-label</td>
                         <td class="px-6 py-4">string|null</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
                         <td class="px-6 py-4">Label text displayed above the progress bar with percentage on the right.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">inside-label</td>
+                        <td class="px-6 py-4">string|null</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
+                        <td class="px-6 py-4">Label text displayed inside the progress bar.</td>
                     </tr>
                 </tbody>
             </table>
