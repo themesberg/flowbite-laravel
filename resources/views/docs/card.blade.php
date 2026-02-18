@@ -5,9 +5,8 @@
     {{-- Default Card --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.card class="max-w-sm">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+<x-fwb.card class="max-w-sm" title="Noteworthy technology acquisitions 2021" title-element="h5">
+    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
 </x-fwb.card>
 BLADE;
     @endphp
@@ -16,13 +15,14 @@ BLADE;
     {{-- Card with CTA Button --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.card class="max-w-sm">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    <x-fwb.button href="#">
-        Read more
-        <x-fwb-o-arrow-right class="w-3.5 h-3.5 ms-2 rtl:rotate-180" />
-    </x-fwb.button>
+<x-fwb.card class="max-w-sm" title="Noteworthy technology acquisitions 2021" title-element="h5">
+    <x-slot name="content">
+        <p class="mb-3 font-normal text-body">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <x-fwb.button href="#">
+            Read more
+            <x-fwb-o-arrow-right class="w-3.5 h-3.5 ms-2 rtl:rotate-180" />
+        </x-fwb.button>
+    </x-slot>
 </x-fwb.card>
 BLADE;
     @endphp
@@ -31,13 +31,14 @@ BLADE;
     {{-- Card with Image --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.card class="max-w-sm" img="https://flowbite.com/docs/images/blog/image-1.jpg" imgAlt="Blog post image">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    <x-fwb.button href="#">
-        Read more
-        <x-fwb-o-arrow-right class="w-3.5 h-3.5 ms-2 rtl:rotate-180" />
-    </x-fwb.button>
+<x-fwb.card class="max-w-sm" img="https://flowbite.com/docs/images/blog/image-1.jpg" imgAlt="Blog post image" title="Noteworthy technology acquisitions 2021" title-element="h5">
+    <x-slot name="content">
+        <p class="mb-3 font-normal text-body">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <x-fwb.button href="#">
+            Read more
+            <x-fwb-o-arrow-right class="w-3.5 h-3.5 ms-2 rtl:rotate-180" />
+        </x-fwb.button>
+    </x-slot>
 </x-fwb.card>
 BLADE;
     @endphp
@@ -46,9 +47,8 @@ BLADE;
     {{-- Horizontal Card --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.card :horizontal="true" img="https://flowbite.com/docs/images/blog/image-4.jpg" imgAlt="Blog post image">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+<x-fwb.card :horizontal="true" img="https://flowbite.com/docs/images/blog/image-4.jpg" imgAlt="Blog post image" title="Noteworthy technology acquisitions 2021" title-element="h5">
+    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
 </x-fwb.card>
 BLADE;
     @endphp
@@ -57,9 +57,8 @@ BLADE;
     {{-- Card as Link --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.card class="max-w-sm" href="#">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+<x-fwb.card class="max-w-sm" href="#" title="Noteworthy technology acquisitions 2021" title-element="h5">
+    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
 </x-fwb.card>
 BLADE;
     @endphp
@@ -177,6 +176,24 @@ BLADE;
                         <td class="px-6 py-4">string</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">top</code></td>
                         <td class="px-6 py-4">Position of the image. Options: <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">top</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">bottom</code>.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">title</td>
+                        <td class="px-6 py-4">string|null</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
+                        <td class="px-6 py-4">Card title text. Automatically styled with <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">text-2xl font-bold</code>. When set, the default slot is wrapped in a <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">&lt;p&gt;</code> with body text styles.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">title-element</td>
+                        <td class="px-6 py-4">string</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">span</code></td>
+                        <td class="px-6 py-4">HTML tag for the title element (e.g. <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">h5</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">h3</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">span</code>).</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">content</td>
+                        <td class="px-6 py-4">slot</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">—</code></td>
+                        <td class="px-6 py-4">Named slot for rich HTML body content. Use with <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">title</code> when the body needs more than plain text (buttons, lists, etc.).</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">header</td>
