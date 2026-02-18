@@ -8,7 +8,7 @@
 <x-fwb.banner id="default-banner">
     <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
         <span class="inline-flex p-1 me-3 bg-gray-200 rounded-full dark:bg-gray-600">
-            <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 19"><path d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z"/></svg>
+            <x-fwb-o-bullhorn class="w-3 h-3 text-gray-500 dark:text-gray-400" />
             <span class="sr-only">Announcement</span>
         </span>
         <span>New brand identity has been launched for the <a href="#" class="inline font-medium text-blue-600 underline dark:text-blue-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline">Flowbite Library</a></span>
@@ -23,7 +23,7 @@ BLADE;
     $code = <<<'BLADE'
 <x-fwb.banner id="bottom-banner" position="bottom">
     <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-        <span>Get 5% commission per sale <a href="#" class="flex items-center ms-0 text-sm font-medium text-blue-600 md:ms-1 md:inline-flex dark:text-blue-500 hover:underline">Become a partner <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></a></span>
+        <span>Get 5% commission per sale <a href="#" class="flex items-center ms-0 text-sm font-medium text-blue-600 md:ms-1 md:inline-flex dark:text-blue-500 hover:underline">Become a partner <x-fwb-o-arrow-right class="w-3 h-3 ms-2 rtl:rotate-180" /></a></span>
     </p>
 </x-fwb.banner>
 BLADE;
@@ -35,7 +35,7 @@ BLADE;
     $code = <<<'BLADE'
 <x-fwb.banner id="cta-banner" color="dark">
     <p class="flex items-center text-sm font-normal text-white">
-        <svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/></svg>
+        <x-fwb-o-info-circle class="w-3 h-3 me-2" />
         <span>Explore the new Flowbite dashboard with 50+ UI components. <a href="#" class="inline font-medium text-blue-400 underline underline-offset-2 hover:no-underline">Check it out</a></span>
     </p>
 </x-fwb.banner>

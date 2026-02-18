@@ -30,38 +30,43 @@ BLADE;
     @endphp
     <x-preview :code="$code" title="Tabs with Underline" />
 
-    {{-- Tabs with Icons --}}
+    {{-- Tabs with Icons (fwb-icon prop) --}}
     @php
     $code = <<<'BLADE'
 <x-fwb.tabs id="icon-tabs" variant="underline">
-    <x-fwb.tabs.item :active="true" variant="underline">
-        <span class="inline-flex items-center justify-center">
-            <svg class="w-4 h-4 me-2 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/></svg>
-            Profile
-        </span>
-    </x-fwb.tabs.item>
-    <x-fwb.tabs.item variant="underline">
-        <span class="inline-flex items-center justify-center">
-            <svg class="w-4 h-4 me-2 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
-            Dashboard
-        </span>
-    </x-fwb.tabs.item>
-    <x-fwb.tabs.item variant="underline">
-        <span class="inline-flex items-center justify-center">
-            <svg class="w-4 h-4 me-2 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M5 11.424V1a1 1 0 1 0-2 0v10.424a3.228 3.228 0 0 0 0 6.152V19a1 1 0 1 0 2 0v-1.424a3.228 3.228 0 0 0 0-6.152ZM19.25 14.5A3.243 3.243 0 0 0 17 11.424V1a1 1 0 0 0-2 0v10.424a3.228 3.228 0 0 0 0 6.152V19a1 1 0 0 0 2 0v-1.424a3.243 3.243 0 0 0 2.25-3.076ZM11 1a1 1 0 1 0-2 0v3.424a3.228 3.228 0 0 0 0 6.152V19a1 1 0 1 0 2 0v-8.424a3.228 3.228 0 0 0 0-6.152V1Z"/></svg>
-            Settings
-        </span>
-    </x-fwb.tabs.item>
-    <x-fwb.tabs.item variant="underline">
-        <span class="inline-flex items-center justify-center">
-            <svg class="w-4 h-4 me-2 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/></svg>
-            Contacts
-        </span>
-    </x-fwb.tabs.item>
+    <x-fwb.tabs.item :active="true" variant="underline" fwb-icon="s-user-circle">Profile</x-fwb.tabs.item>
+    <x-fwb.tabs.item variant="underline" fwb-icon="o-grid">Dashboard</x-fwb.tabs.item>
+    <x-fwb.tabs.item variant="underline" fwb-icon="o-adjustments-horizontal">Settings</x-fwb.tabs.item>
+    <x-fwb.tabs.item variant="underline" fwb-icon="s-user-circle">Contacts</x-fwb.tabs.item>
 </x-fwb.tabs>
 BLADE;
     @endphp
     <x-preview :code="$code" title="Tabs with Icons" />
+
+    {{-- Tabs with Icons (icon slot) --}}
+    @php
+    $code = <<<'BLADE'
+<x-fwb.tabs id="icon-slot-tabs" variant="underline">
+    <x-fwb.tabs.item :active="true" variant="underline">
+        <x-slot name="icon"><x-fwb-s-user-circle class="w-4 h-4 me-2 text-body-subtle" /></x-slot>
+        Profile
+    </x-fwb.tabs.item>
+    <x-fwb.tabs.item variant="underline">
+        <x-slot name="icon"><x-fwb-o-grid class="w-5 h-5 me-2 text-danger" /></x-slot>
+        Dashboard
+    </x-fwb.tabs.item>
+    <x-fwb.tabs.item variant="underline">
+        <x-slot name="icon"><x-fwb-o-adjustments-horizontal class="w-4 h-4 me-2 text-body-subtle" /></x-slot>
+        Settings
+    </x-fwb.tabs.item>
+    <x-fwb.tabs.item variant="underline">
+        <x-slot name="icon"><x-fwb-s-user-circle class="w-4 h-4 me-2 text-body-subtle" /></x-slot>
+        Contacts
+    </x-fwb.tabs.item>
+</x-fwb.tabs>
+BLADE;
+    @endphp
+    <x-preview :code="$code" title="Tabs with Icons (Slot)" />
 
     {{-- Pills Tabs --}}
     @php
@@ -181,6 +186,18 @@ BLADE;
                         <td class="px-6 py-4">string</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">default</code></td>
                         <td class="px-6 py-4">Must match the parent tabs variant to apply correct styling.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">fwb-icon</td>
+                        <td class="px-6 py-4">string|null</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
+                        <td class="px-6 py-4">Shorthand icon name from <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">flowbite-blade-icons</code> (e.g. <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">s-user-circle</code>). Renders with default <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">w-4 h-4 me-2 text-body-subtle</code> classes.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">icon</td>
+                        <td class="px-6 py-4">slot</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">—</code></td>
+                        <td class="px-6 py-4">Named slot for full icon control. Takes priority over <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">fwb-icon</code> prop.</td>
                     </tr>
                 </tbody>
             </table>

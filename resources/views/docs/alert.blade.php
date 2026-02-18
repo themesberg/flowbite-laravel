@@ -30,20 +30,10 @@ BLADE;
     @php
     $code = <<<'BLADE'
 <div class="space-y-4">
-    <x-fwb.alert color="blue">
-        <x-slot:icon>
-            <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-            </svg>
-        </x-slot:icon>
+    <x-fwb.alert color="blue" fwb-icon="o-info-circle">
         <span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
     </x-fwb.alert>
-    <x-fwb.alert color="red">
-        <x-slot:icon>
-            <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-            </svg>
-        </x-slot:icon>
+    <x-fwb.alert color="red" fwb-icon="o-info-circle">
         <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
     </x-fwb.alert>
 </div>
@@ -102,12 +92,7 @@ BLADE;
     {{-- Additional Content --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.alert color="blue" :dismissible="true">
-    <x-slot:icon>
-        <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-        </svg>
-    </x-slot:icon>
+<x-fwb.alert color="blue" :dismissible="true" fwb-icon="o-info-circle">
     <div>
         <span class="text-lg font-medium">This is an info alert</span>
         <div class="mt-2 mb-4 text-sm">More info about this info alert goes here. This example text provides additional context.</div>
@@ -124,12 +109,7 @@ BLADE;
     {{-- Alert with List --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.alert color="red">
-    <x-slot:icon>
-        <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-        </svg>
-    </x-slot:icon>
+<x-fwb.alert color="red" fwb-icon="o-info-circle">
     <div>
         <span class="font-medium">Ensure that these requirements are met:</span>
         <ul class="mt-1.5 list-disc list-inside">
@@ -178,10 +158,16 @@ BLADE;
                         <td class="px-6 py-4">Add a top border accent to the alert.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">fwb-icon</td>
+                        <td class="px-6 py-4">string|null</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
+                        <td class="px-6 py-4">Shorthand icon name from <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">flowbite-blade-icons</code> (e.g. <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">o-info-circle</code>). Renders with default <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">shrink-0 w-4 h-4</code> classes.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">icon</td>
                         <td class="px-6 py-4">slot</td>
-                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
-                        <td class="px-6 py-4">Named slot for an icon displayed before the alert content.</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">—</code></td>
+                        <td class="px-6 py-4">Named slot for full icon control. Takes priority over <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">fwb-icon</code> prop.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">id</td>

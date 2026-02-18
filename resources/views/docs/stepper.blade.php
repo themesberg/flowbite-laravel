@@ -18,16 +18,8 @@ BLADE;
     @php
     $code = <<<'BLADE'
 <x-fwb.stepper>
-    <x-fwb.stepper.item :completed="true" label="Personal Info">
-        <x-slot:icon>
-            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/></svg>
-        </x-slot:icon>
-    </x-fwb.stepper.item>
-    <x-fwb.stepper.item :completed="true" label="Account Info">
-        <x-slot:icon>
-            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/></svg>
-        </x-slot:icon>
-    </x-fwb.stepper.item>
+    <x-fwb.stepper.item :completed="true" label="Personal Info" fwb-icon="s-check-circle" />
+    <x-fwb.stepper.item :completed="true" label="Account Info" fwb-icon="s-check-circle" />
     <x-fwb.stepper.item :current="true" label="Review" />
     <x-fwb.stepper.item label="Confirmation" />
 </x-fwb.stepper>
@@ -67,12 +59,12 @@ BLADE;
     $code = <<<'BLADE'
 <x-fwb.stepper variant="vertical">
     <div class="flex items-center p-4 text-green-700 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-green-400" role="alert">
-        <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/></svg>
+        <x-fwb-s-check-circle class="flex-shrink-0 w-4 h-4 me-2" />
         <span class="sr-only">Completed</span>
         <h3 class="text-sm font-medium">Personal information has been completed.</h3>
     </div>
     <div class="flex items-center p-4 text-blue-700 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-800 dark:border-blue-800 dark:text-blue-400" role="alert">
-        <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/></svg>
+        <x-fwb-o-info-circle class="flex-shrink-0 w-4 h-4 me-2" />
         <span class="sr-only">Current</span>
         <h3 class="text-sm font-medium">Account information is being reviewed.</h3>
     </div>
@@ -105,21 +97,21 @@ BLADE;
 <x-fwb.stepper variant="timeline">
     <div class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
-            <svg class="w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/></svg>
+            <x-fwb-o-check class="w-3.5 h-3.5 text-green-500 dark:text-green-400" />
         </span>
         <h3 class="font-medium leading-tight text-gray-900 dark:text-white">Personal Info</h3>
         <p class="text-sm text-gray-500 dark:text-gray-400">Step completed successfully.</p>
     </div>
     <div class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-blue-900">
-            <svg class="w-3.5 h-3.5 text-blue-600 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Z"/></svg>
+            <x-fwb-s-user-circle class="w-3.5 h-3.5 text-blue-600 dark:text-blue-300" />
         </span>
         <h3 class="font-medium leading-tight text-gray-900 dark:text-white">Account Details</h3>
         <p class="text-sm text-gray-500 dark:text-gray-400">Currently in progress.</p>
     </div>
     <div class="ms-6">
         <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
-            <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20"><path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2ZM7 2h4v3H7V2Zm5.7 8.289-3.975 3.857a1 1 0 0 1-1.393 0L5.3 12.182a1.002 1.002 0 1 1 1.4-1.436l1.328 1.289 3.28-3.181a1 1 0 1 1 1.392 1.435Z"/></svg>
+            <x-fwb-o-file class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" />
         </span>
         <h3 class="font-medium leading-tight text-gray-900 dark:text-white">Confirmation</h3>
         <p class="text-sm text-gray-500 dark:text-gray-400">Pending review.</p>
@@ -222,10 +214,16 @@ BLADE;
                         <td class="px-6 py-4">Additional description text displayed below the label.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">fwb-icon</td>
+                        <td class="px-6 py-4">string|null</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">null</code></td>
+                        <td class="px-6 py-4">Shorthand icon name from <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">flowbite-blade-icons</code> (e.g. <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">s-check-circle</code>). Displayed when the step is not completed.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">icon</td>
                         <td class="px-6 py-4">slot</td>
-                        <td class="px-6 py-4">-</td>
-                        <td class="px-6 py-4">Named slot for a custom icon. Displayed when the step is not completed.</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">—</code></td>
+                        <td class="px-6 py-4">Named slot for full icon control. Displayed when the step is not completed. Takes priority over <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">fwb-icon</code> prop.</td>
                     </tr>
                 </tbody>
             </table>

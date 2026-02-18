@@ -56,17 +56,12 @@ BLADE;
 <div class="space-y-4 max-w-md">
     <x-fwb.input label="Your email" type="email" placeholder="name@flowbite.com">
         <x-slot:prefix>
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-            </svg>
+            <x-fwb-o-envelope class="w-4 h-4 text-gray-500 dark:text-gray-400" />
         </x-slot:prefix>
     </x-fwb.input>
     <x-fwb.input label="Username" placeholder="Username">
         <x-slot:prefix>
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
-            </svg>
+            <x-fwb-s-user-circle class="w-4 h-4 text-gray-500 dark:text-gray-400" />
         </x-slot:prefix>
     </x-fwb.input>
 </div>
@@ -100,9 +95,7 @@ BLADE;
 <div class="max-w-md">
     <x-fwb.input label="Search" type="search" placeholder="Search...">
         <x-slot:prefix>
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
+            <x-fwb-o-search class="w-4 h-4 text-gray-500 dark:text-gray-400" />
         </x-slot:prefix>
         <x-slot:suffix>
             <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>

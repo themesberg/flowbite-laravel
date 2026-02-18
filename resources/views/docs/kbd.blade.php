@@ -60,19 +60,19 @@ BLADE;
     $code = <<<'BLADE'
 <div class="flex flex-wrap gap-1">
     <x-fwb.kbd :arrow="true">
-        <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"/></svg>
+        <x-fwb-o-chevron-down class="w-2.5 h-2.5" />
         <span class="sr-only">Arrow down</span>
     </x-fwb.kbd>
     <x-fwb.kbd :arrow="true">
-        <svg class="w-2.5 h-2.5 rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"/></svg>
+        <x-fwb-o-chevron-down class="w-2.5 h-2.5 rotate-180" />
         <span class="sr-only">Arrow up</span>
     </x-fwb.kbd>
     <x-fwb.kbd :arrow="true">
-        <svg class="w-2.5 h-2.5 rotate-90" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"/></svg>
+        <x-fwb-o-chevron-down class="w-2.5 h-2.5 rotate-90" />
         <span class="sr-only">Arrow left</span>
     </x-fwb.kbd>
     <x-fwb.kbd :arrow="true">
-        <svg class="w-2.5 h-2.5 -rotate-90" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"/></svg>
+        <x-fwb-o-chevron-down class="w-2.5 h-2.5 -rotate-90" />
         <span class="sr-only">Arrow right</span>
     </x-fwb.kbd>
 </div>
