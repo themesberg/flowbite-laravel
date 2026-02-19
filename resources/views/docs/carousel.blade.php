@@ -5,23 +5,13 @@
     {{-- Default Slider --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.carousel id="default-carousel" :slide="true">
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 4">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 5">
-    </div>
-</x-fwb.carousel>
+<x-fwb.carousel id="default-carousel" :slide="true" :items="[
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-1.svg', 'alt' => 'Slide 1'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-2.svg', 'alt' => 'Slide 2'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-3.svg', 'alt' => 'Slide 3'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-4.svg', 'alt' => 'Slide 4'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-5.svg', 'alt' => 'Slide 5'],
+]" />
 BLADE;
     @endphp
     <x-preview :code="$code" title="Default Slider" />
@@ -29,59 +19,35 @@ BLADE;
     {{-- Static Carousel (Controls Only) --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.carousel id="static-carousel" :indicators="false">
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
-    </div>
-</x-fwb.carousel>
+<x-fwb.carousel id="static-carousel" :indicators="false" :items="[
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-1.svg', 'alt' => 'Slide 1'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-2.svg', 'alt' => 'Slide 2'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-3.svg', 'alt' => 'Slide 3'],
+]" />
 BLADE;
     @endphp
     <x-preview :code="$code" title="Static Carousel (Controls Only)" />
 
-    {{-- With Indicators --}}
+    {{-- With Links --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.carousel id="indicators-carousel" :indicators="true" :controls="true">
-    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 4">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 5">
-    </div>
-</x-fwb.carousel>
+<x-fwb.carousel id="links-carousel" :items="[
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-1.svg', 'alt' => 'Slide 1', 'href' => '#slide-1'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-2.svg', 'alt' => 'Slide 2', 'href' => '#slide-2'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-3.svg', 'alt' => 'Slide 3', 'href' => '#slide-3'],
+]" />
 BLADE;
     @endphp
-    <x-preview :code="$code" title="With Indicators" />
+    <x-preview :code="$code" title="Carousel with Links" />
 
     {{-- Custom Animation --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.carousel id="animation-carousel">
-    <div class="hidden duration-200 ease-linear" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
-    </div>
-    <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
-    </div>
-    <div class="hidden duration-200 ease-linear" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
-    </div>
-</x-fwb.carousel>
+<x-fwb.carousel id="animation-carousel" duration="duration-200" easing="ease-linear" :items="[
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-1.svg', 'alt' => 'Slide 1'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-2.svg', 'alt' => 'Slide 2'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-3.svg', 'alt' => 'Slide 3'],
+]" />
 BLADE;
     @endphp
     <x-preview :code="$code" title="Custom Animation" />
@@ -89,20 +55,33 @@ BLADE;
     {{-- No Controls --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.carousel id="no-controls-carousel" :slide="true" :controls="false">
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
-    </div>
+<x-fwb.carousel id="no-controls-carousel" :slide="true" :controls="false" :items="[
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-1.svg', 'alt' => 'Slide 1'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-2.svg', 'alt' => 'Slide 2'],
+    ['img' => 'https://flowbite.com/docs/images/carousel/carousel-3.svg', 'alt' => 'Slide 3'],
+]" />
+BLADE;
+    @endphp
+    <x-preview :code="$code" title="Slide without Controls" />
+
+    {{-- Custom Slot Content --}}
+    @php
+    $code = <<<'BLADE'
+<x-fwb.carousel id="custom-carousel">
     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
+        <div class="absolute inset-0 flex items-center justify-center bg-gray-300 dark:bg-gray-700">
+            <span class="text-2xl font-bold text-heading">Custom Slide 1</span>
+        </div>
     </div>
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
+        <div class="absolute inset-0 flex items-center justify-center bg-gray-400 dark:bg-gray-600">
+            <span class="text-2xl font-bold text-heading">Custom Slide 2</span>
+        </div>
     </div>
 </x-fwb.carousel>
 BLADE;
     @endphp
-    <x-preview :code="$code" title="Slide without Controls" />
+    <x-preview :code="$code" title="Custom Slot Content" />
 
     {{-- Properties Table --}}
     <div class="mb-12">
@@ -120,6 +99,12 @@ BLADE;
                     </tr>
                 </thead>
                 <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">items</td>
+                        <td class="px-6 py-4">array</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">[]</code></td>
+                        <td class="px-6 py-4">Array of slide items. Each item: <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">['img' => '...', 'alt' => '...', 'href' => '...']</code>. Only <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">img</code> is required. When provided, slides are auto-generated. When empty, uses the default slot.</td>
+                    </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">id</td>
                         <td class="px-6 py-4">string</td>
@@ -148,13 +133,13 @@ BLADE;
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">duration</td>
                         <td class="px-6 py-4">string</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">duration-700</code></td>
-                        <td class="px-6 py-4">Tailwind CSS duration class for transitions.</td>
+                        <td class="px-6 py-4">Tailwind CSS duration class for slide transitions.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">easing</td>
                         <td class="px-6 py-4">string</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">ease-in-out</code></td>
-                        <td class="px-6 py-4">Tailwind CSS easing class for transitions.</td>
+                        <td class="px-6 py-4">Tailwind CSS easing class for slide transitions.</td>
                     </tr>
                 </tbody>
             </table>
