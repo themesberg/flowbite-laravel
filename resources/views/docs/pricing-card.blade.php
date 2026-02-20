@@ -47,18 +47,18 @@ BLADE;
     @php
     $code = <<<'BLADE'
 <x-fwb.pricing-card
-    title="Enterprise"
-    description="Best for large scale uses and extended redistribution rights."
-    price="499"
+    title="Starter"
+    description="Best option for personal use & for your next project."
+    price="29"
     period="/month"
     button-text="Get started"
     button-href="#"
 >
     <x-fwb.pricing-card.feature>Individual configuration</x-fwb.pricing-card.feature>
     <x-fwb.pricing-card.feature>No setup, or hidden fees</x-fwb.pricing-card.feature>
-    <x-fwb.pricing-card.feature>Team size: <span class="font-semibold">100+ developers</span></x-fwb.pricing-card.feature>
-    <x-fwb.pricing-card.feature :included="false">Custom integration</x-fwb.pricing-card.feature>
-    <x-fwb.pricing-card.feature :included="false">24x7 phone & email support</x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature>Team size: <span class="font-semibold">1 developer</span></x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature :included="false">Premium support: <span class="font-semibold">6 months</span></x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature :included="false">Free updates: <span class="font-semibold">6 months</span></x-fwb.pricing-card.feature>
 </x-fwb.pricing-card>
 BLADE;
     @endphp
@@ -68,13 +68,16 @@ BLADE;
     @php
     $code = <<<'BLADE'
 <x-fwb.pricing-card
-    title="Free"
-    price="0"
+    title="Enterprise"
+    description="Best for large scale uses and extended redistribution rights."
+    price="499"
     period="/month"
 >
-    <x-fwb.pricing-card.feature>1 team member</x-fwb.pricing-card.feature>
-    <x-fwb.pricing-card.feature>5GB Cloud storage</x-fwb.pricing-card.feature>
-    <x-fwb.pricing-card.feature :included="false">Premium support</x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature>Individual configuration</x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature>No setup, or hidden fees</x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature>Team size: <span class="font-semibold">100+ developers</span></x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature>Premium support: <span class="font-semibold">36 months</span></x-fwb.pricing-card.feature>
+    <x-fwb.pricing-card.feature>Free updates: <span class="font-semibold">36 months</span></x-fwb.pricing-card.feature>
 
     <x-slot:footer>
         <x-fwb.button color="light" class="w-full">Contact sales</x-fwb.button>

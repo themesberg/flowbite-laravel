@@ -1,6 +1,6 @@
 <x-layouts.app title="Card - Flowbite Blade">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Card</h1>
-    <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Get started with a large variety of card components built with Tailwind CSS to show content in a box such as blog posts, user profiles, pricing plans, and more.</p>
+    <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use these responsive card components to show data entries and information to your users in multiple forms and contexts such as for your blog, application, user profiles, and more.</p>
 
     {{-- Default Card --}}
     @php
