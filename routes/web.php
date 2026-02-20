@@ -13,6 +13,7 @@ Route::get('/docs/avatar', fn () => view('docs.avatar'));
 Route::get('/docs/badge', fn () => view('docs.badge'));
 Route::get('/docs/button', fn () => view('docs.button'));
 Route::get('/docs/card', fn () => view('docs.card'));
+Route::get('/docs/pricing-card', fn () => view('docs.pricing-card'));
 Route::get('/docs/spinner', fn () => view('docs.spinner'));
 Route::get('/docs/progress', fn () => view('docs.progress'));
 Route::get('/docs/rating', fn () => view('docs.rating'));

@@ -40,6 +40,7 @@
             <li><a href="/docs/badge" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Badge</a></li>
             <li><a href="/docs/button" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Button</a></li>
             <li><a href="/docs/card" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Card</a></li>
+            <li><a href="/docs/pricing-card" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Pricing Card</a></li>
             <li><a href="/docs/spinner" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Spinner</a></li>
             <li><a href="/docs/progress" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Progress</a></li>
             <li><a href="/docs/rating" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Rating</a></li>

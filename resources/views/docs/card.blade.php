@@ -101,36 +101,6 @@ BLADE;
     @endphp
     <x-preview :code="$code" title="User Profile Card" />
 
-    {{-- Pricing Card --}}
-    @php
-    $code = <<<'BLADE'
-<x-fwb.card class="max-w-sm">
-    <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
-    <div class="flex items-baseline text-gray-900 dark:text-white">
-        <span class="text-3xl font-semibold">$</span>
-        <span class="text-5xl font-extrabold tracking-tight">49</span>
-        <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
-    </div>
-    <ul role="list" class="space-y-5 my-7">
-        <li class="flex items-center">
-            <x-fwb-s-check-circle class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" />
-            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">2 team members</span>
-        </li>
-        <li class="flex items-center">
-            <x-fwb-s-check-circle class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" />
-            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">20GB Cloud storage</span>
-        </li>
-        <li class="flex items-center">
-            <x-fwb-s-check-circle class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" />
-            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Integration help</span>
-        </li>
-    </ul>
-    <x-fwb.button class="w-full">Choose plan</x-fwb.button>
-</x-fwb.card>
-BLADE;
-    @endphp
-    <x-preview :code="$code" title="Pricing Card" />
-
     {{-- Properties Table --}}
     <div class="mb-12">
         <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">Component Properties</h2>
