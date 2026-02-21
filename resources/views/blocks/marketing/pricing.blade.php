@@ -129,14 +129,14 @@ BLADE;
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">title</td>
                         <td class="px-6 py-4">string</td>
-                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">Designed for business teams like yours</code></td>
-                        <td class="px-6 py-4">The section heading text.</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">''</code></td>
+                        <td class="px-6 py-4">The section heading text. Hidden when empty.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">description</td>
                         <td class="px-6 py-4">string</td>
-                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">Here at Flowbite we focus on...</code></td>
-                        <td class="px-6 py-4">The paragraph text below the heading.</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">''</code></td>
+                        <td class="px-6 py-4">The paragraph text below the heading. Hidden when empty.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">slot</td>
