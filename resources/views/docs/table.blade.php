@@ -5,7 +5,7 @@
     {{-- Default Table --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.table :shadow="true">
+<x-fwb.table>
     <x-slot:head>
         <x-fwb.table.head>
             <x-fwb.table.cell :header="true">Product name</x-fwb.table.cell>
@@ -15,31 +15,31 @@
         </x-fwb.table.head>
     </x-slot:head>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Microsoft Surface Pro</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Microsoft Surface Pro</x-fwb.table.cell>
         <x-fwb.table.cell>White</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop PC</x-fwb.table.cell>
         <x-fwb.table.cell>$1999</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Magic Mouse 2</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Magic Mouse 2</x-fwb.table.cell>
         <x-fwb.table.cell>Black</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$99</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple Watch</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Apple Watch</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$179</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">iPad</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">iPad</x-fwb.table.cell>
         <x-fwb.table.cell>Gold</x-fwb.table.cell>
         <x-fwb.table.cell>Tablet</x-fwb.table.cell>
         <x-fwb.table.cell>$799</x-fwb.table.cell>
@@ -52,7 +52,7 @@ BLADE;
     {{-- Striped Rows --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.table :striped="true" :shadow="true">
+<x-fwb.table :striped="true">
     <x-slot:head>
         <x-fwb.table.head>
             <x-fwb.table.cell :header="true">Product name</x-fwb.table.cell>
@@ -61,26 +61,26 @@ BLADE;
             <x-fwb.table.cell :header="true">Price</x-fwb.table.cell>
         </x-fwb.table.head>
     </x-slot:head>
-    <x-fwb.table.row :striped="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :striped="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Microsoft Surface Pro</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Microsoft Surface Pro</x-fwb.table.cell>
         <x-fwb.table.cell>White</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop PC</x-fwb.table.cell>
         <x-fwb.table.cell>$1999</x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :striped="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Magic Mouse 2</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Magic Mouse 2</x-fwb.table.cell>
         <x-fwb.table.cell>Black</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$99</x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :striped="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple Watch</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Apple Watch</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$179</x-fwb.table.cell>
@@ -93,7 +93,7 @@ BLADE;
     {{-- Hover State --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.table :hoverable="true" :shadow="true">
+<x-fwb.table :hoverable="true">
     <x-slot:head>
         <x-fwb.table.head>
             <x-fwb.table.cell :header="true">Product name</x-fwb.table.cell>
@@ -102,20 +102,20 @@ BLADE;
             <x-fwb.table.cell :header="true">Price</x-fwb.table.cell>
         </x-fwb.table.head>
     </x-slot:head>
-    <x-fwb.table.row :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Microsoft Surface Pro</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Microsoft Surface Pro</x-fwb.table.cell>
         <x-fwb.table.cell>White</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop PC</x-fwb.table.cell>
         <x-fwb.table.cell>$1999</x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Magic Mouse 2</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Magic Mouse 2</x-fwb.table.cell>
         <x-fwb.table.cell>Black</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$99</x-fwb.table.cell>
@@ -138,13 +138,13 @@ BLADE;
         </x-fwb.table.head>
     </x-slot:head>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Microsoft Surface Pro</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Microsoft Surface Pro</x-fwb.table.cell>
         <x-fwb.table.cell>White</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop PC</x-fwb.table.cell>
         <x-fwb.table.cell>$1999</x-fwb.table.cell>
@@ -157,7 +157,7 @@ BLADE;
     {{-- Table Foot --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.table :shadow="true">
+<x-fwb.table>
     <x-slot:head>
         <x-fwb.table.head>
             <x-fwb.table.cell :header="true">Product name</x-fwb.table.cell>
@@ -166,20 +166,20 @@ BLADE;
         </x-fwb.table.head>
     </x-slot:head>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>1</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Magic Mouse 2</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Magic Mouse 2</x-fwb.table.cell>
         <x-fwb.table.cell>2</x-fwb.table.cell>
         <x-fwb.table.cell>$198</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-slot:foot>
         <x-fwb.table.row>
-            <x-fwb.table.cell class="font-semibold text-gray-900 dark:text-white">Total</x-fwb.table.cell>
-            <x-fwb.table.cell class="font-semibold text-gray-900 dark:text-white">3</x-fwb.table.cell>
-            <x-fwb.table.cell class="font-semibold text-gray-900 dark:text-white">$3197</x-fwb.table.cell>
+            <x-fwb.table.cell class="font-semibold text-heading">Total</x-fwb.table.cell>
+            <x-fwb.table.cell class="font-semibold text-heading">3</x-fwb.table.cell>
+            <x-fwb.table.cell class="font-semibold text-heading">$3197</x-fwb.table.cell>
         </x-fwb.table.row>
     </x-slot:foot>
 </x-fwb.table>
@@ -190,10 +190,10 @@ BLADE;
     {{-- Table Caption --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.table :shadow="true">
+<x-fwb.table>
     <x-slot:caption>
-        <p class="text-lg font-semibold text-left text-gray-900 dark:text-white">Our products</p>
-        <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">Browse a list of Flowbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.</p>
+        Our products
+        <p class="mt-1.5 text-sm font-normal text-body">Browse a list of Flowbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.</p>
     </x-slot:caption>
     <x-slot:head>
         <x-fwb.table.head>
@@ -204,19 +204,19 @@ BLADE;
         </x-fwb.table.head>
     </x-slot:head>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Microsoft Surface Pro</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Microsoft Surface Pro</x-fwb.table.cell>
         <x-fwb.table.cell>White</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop PC</x-fwb.table.cell>
         <x-fwb.table.cell>$1999</x-fwb.table.cell>
     </x-fwb.table.row>
     <x-fwb.table.row>
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Magic Mouse 2</x-fwb.table.cell>
+        <x-fwb.table.cell :row-header="true">Magic Mouse 2</x-fwb.table.cell>
         <x-fwb.table.cell>Black</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$99</x-fwb.table.cell>
@@ -229,7 +229,7 @@ BLADE;
     {{-- Striped Rows with Hover --}}
     @php
     $code = <<<'BLADE'
-<x-fwb.table :striped="true" :hoverable="true" :shadow="true">
+<x-fwb.table :striped="true" :hoverable="true">
     <x-slot:head>
         <x-fwb.table.head>
             <x-fwb.table.cell :header="true">Product name</x-fwb.table.cell>
@@ -239,33 +239,33 @@ BLADE;
             <x-fwb.table.cell :header="true"><span class="sr-only">Edit</span></x-fwb.table.cell>
         </x-fwb.table.head>
     </x-slot:head>
-    <x-fwb.table.row :striped="true" :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple MacBook Pro 17"</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Apple MacBook Pro 17"</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop</x-fwb.table.cell>
         <x-fwb.table.cell>$2999</x-fwb.table.cell>
-        <x-fwb.table.cell><a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a></x-fwb.table.cell>
+        <x-fwb.table.cell><a href="#" class="font-medium text-brand hover:underline">Edit</a></x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :striped="true" :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Microsoft Surface Pro</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Microsoft Surface Pro</x-fwb.table.cell>
         <x-fwb.table.cell>White</x-fwb.table.cell>
         <x-fwb.table.cell>Laptop PC</x-fwb.table.cell>
         <x-fwb.table.cell>$1999</x-fwb.table.cell>
-        <x-fwb.table.cell><a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a></x-fwb.table.cell>
+        <x-fwb.table.cell><a href="#" class="font-medium text-brand hover:underline">Edit</a></x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :striped="true" :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Magic Mouse 2</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Magic Mouse 2</x-fwb.table.cell>
         <x-fwb.table.cell>Black</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$99</x-fwb.table.cell>
-        <x-fwb.table.cell><a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a></x-fwb.table.cell>
+        <x-fwb.table.cell><a href="#" class="font-medium text-brand hover:underline">Edit</a></x-fwb.table.cell>
     </x-fwb.table.row>
-    <x-fwb.table.row :striped="true" :hoverable="true">
-        <x-fwb.table.cell class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple Watch</x-fwb.table.cell>
+    <x-fwb.table.row>
+        <x-fwb.table.cell :row-header="true">Apple Watch</x-fwb.table.cell>
         <x-fwb.table.cell>Silver</x-fwb.table.cell>
         <x-fwb.table.cell>Accessories</x-fwb.table.cell>
         <x-fwb.table.cell>$179</x-fwb.table.cell>
-        <x-fwb.table.cell><a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a></x-fwb.table.cell>
+        <x-fwb.table.cell><a href="#" class="font-medium text-brand hover:underline">Edit</a></x-fwb.table.cell>
     </x-fwb.table.row>
 </x-fwb.table>
 BLADE;
@@ -292,25 +292,25 @@ BLADE;
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">striped</td>
                         <td class="px-6 py-4">bool</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Enable striped rows with alternating background colors.</td>
+                        <td class="px-6 py-4">Enable striped rows with alternating background colors. Automatically applied to all child rows.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">hoverable</td>
                         <td class="px-6 py-4">bool</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Enable hover highlighting on table rows.</td>
+                        <td class="px-6 py-4">Enable hover highlighting on all child rows.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">shadow</td>
                         <td class="px-6 py-4">bool</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Add a shadow effect to the table wrapper.</td>
+                        <td class="px-6 py-4">Add a subtle shadow to the table wrapper.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">noborder</td>
                         <td class="px-6 py-4">bool</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Remove default borders from the table.</td>
+                        <td class="px-6 py-4">Remove the border from the table wrapper.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">head</td>
@@ -369,16 +369,10 @@ BLADE;
                 </thead>
                 <tbody>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">striped</td>
-                        <td class="px-6 py-4">bool</td>
-                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Apply alternating background color styling to this row.</td>
-                    </tr>
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">hoverable</td>
-                        <td class="px-6 py-4">bool</td>
-                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Enable hover background change on this row.</td>
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">slot</td>
+                        <td class="px-6 py-4">slot</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">Default slot for table cells. Striped and hoverable styles are inherited from the parent <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">x-fwb.table</code> component.</td>
                     </tr>
                 </tbody>
             </table>
@@ -400,7 +394,13 @@ BLADE;
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">header</td>
                         <td class="px-6 py-4">bool</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
-                        <td class="px-6 py-4">Render as a <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">&lt;th&gt;</code> element instead of <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">&lt;td&gt;</code>.</td>
+                        <td class="px-6 py-4">Render as a column header <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">&lt;th scope="col"&gt;</code>. Used inside <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">x-fwb.table.head</code>.</td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">row-header</td>
+                        <td class="px-6 py-4">bool</td>
+                        <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">false</code></td>
+                        <td class="px-6 py-4">Render as a row header <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">&lt;th scope="row"&gt;</code> with bold text. Used for the first cell in a body row.</td>
                     </tr>
                 </tbody>
             </table>

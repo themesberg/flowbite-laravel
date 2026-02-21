@@ -134,13 +134,13 @@ BLADE;
     @php
     $code = <<<'BLADE'
 <div class="flex flex-wrap gap-4">
-    <x-fwb.button data-modal-target="tl-modal" data-modal-toggle="tl-modal" data-modal-placement="top-left">Top left</x-fwb.button>
-    <x-fwb.button data-modal-target="tr-modal" data-modal-toggle="tr-modal" data-modal-placement="top-right">Top right</x-fwb.button>
-    <x-fwb.button data-modal-target="bl-modal" data-modal-toggle="bl-modal" data-modal-placement="bottom-left">Bottom left</x-fwb.button>
-    <x-fwb.button data-modal-target="br-modal" data-modal-toggle="br-modal" data-modal-placement="bottom-right">Bottom right</x-fwb.button>
+    <x-fwb.button data-modal-target="tl-modal" data-modal-toggle="tl-modal">Top left</x-fwb.button>
+    <x-fwb.button data-modal-target="tr-modal" data-modal-toggle="tr-modal">Top right</x-fwb.button>
+    <x-fwb.button data-modal-target="bl-modal" data-modal-toggle="bl-modal">Bottom left</x-fwb.button>
+    <x-fwb.button data-modal-target="br-modal" data-modal-toggle="br-modal">Bottom right</x-fwb.button>
 </div>
 
-<x-fwb.modal id="tl-modal">
+<x-fwb.modal id="tl-modal" position="top-left">
     <x-slot:header>Top left modal</x-slot:header>
     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">This modal is positioned at the top left of the page.</p>
     <x-slot:footer>
@@ -148,7 +148,7 @@ BLADE;
     </x-slot:footer>
 </x-fwb.modal>
 
-<x-fwb.modal id="tr-modal">
+<x-fwb.modal id="tr-modal" position="top-right">
     <x-slot:header>Top right modal</x-slot:header>
     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">This modal is positioned at the top right of the page.</p>
     <x-slot:footer>
@@ -156,7 +156,7 @@ BLADE;
     </x-slot:footer>
 </x-fwb.modal>
 
-<x-fwb.modal id="bl-modal">
+<x-fwb.modal id="bl-modal" position="bottom-left">
     <x-slot:header>Bottom left modal</x-slot:header>
     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">This modal is positioned at the bottom left of the page.</p>
     <x-slot:footer>
@@ -164,7 +164,7 @@ BLADE;
     </x-slot:footer>
 </x-fwb.modal>
 
-<x-fwb.modal id="br-modal">
+<x-fwb.modal id="br-modal" position="bottom-right">
     <x-slot:header>Bottom right modal</x-slot:header>
     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">This modal is positioned at the bottom right of the page.</p>
     <x-slot:footer>
@@ -223,7 +223,7 @@ BLADE;
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">position</td>
                         <td class="px-6 py-4">string</td>
                         <td class="px-6 py-4"><code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">center</code></td>
-                        <td class="px-6 py-4">Position of the modal. Use data-modal-placement on the trigger button for placement control.</td>
+                        <td class="px-6 py-4">Position of the modal on the page. Options: <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">center</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">top-left</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">top-center</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">top-right</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">center-left</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">center-right</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">bottom-left</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">bottom-center</code>, <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">bottom-right</code>.</td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">dismissible</td>
