@@ -1,59 +1,136 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Flowbite Blade Docs
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+The official documentation site for [Flowbite Blade](https://flowbite-laravel.com) — Laravel Blade components for [Flowbite](https://flowbite.com).
 
-## About Laravel
+Live at **[flowbite-laravel.com](https://flowbite-laravel.com)**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Interactive documentation with live previews and copy-paste Blade code for 60+ components and 80+ pre-built blocks.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### What's documented
 
-## Learning Laravel
+- **46 component pages** — Accordion, Alert, Avatar, Badge, Button, Card, Modal, Table, Forms, and more
+- **37 block pages** — Marketing, Application UI, E-commerce, and Publisher sections
+- **3 layout pages** — Admin, Auth, and Settings layouts
+- **Properties tables** — Props, types, defaults, and descriptions for every component
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Requirements
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP 8.2+
+- Node.js 18+
+- Composer
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```bash
+git clone <repository-url> flowbite-blade-docs
+cd flowbite-blade-docs
+composer run setup
+```
 
-### Premium Partners
+The `setup` script handles: Composer install, environment configuration, key generation, database migration, npm install, and asset build.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Development
 
-## Contributing
+```bash
+composer run dev
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Runs concurrently:
+- `php artisan serve` — Laravel development server
+- `php artisan queue:listen` — Queue worker
+- `php artisan pail` — Real-time log viewer
+- `npm run dev` — Vite HMR
 
-## Code of Conduct
+## Tech Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Layer | Technology |
+|-------|-----------|
+| Framework | Laravel 12 |
+| Frontend | Tailwind CSS v4, Flowbite 4 |
+| Components | Flowbite Blade |
+| Icons | Flowbite Blade Icons |
+| Bundler | Vite 7 |
+| Database | SQLite |
 
-## Security Vulnerabilities
+## Project Structure
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+resources/views/
+├── welcome.blade.php              # Home page
+├── components/
+│   ├── layouts/
+│   │   └── app.blade.php          # Main layout (header, sidebar, content)
+│   └── preview.blade.php          # Live preview + code display component
+├── docs/                          # Component documentation (46 pages)
+│   ├── accordion.blade.php
+│   ├── alert.blade.php
+│   ├── button.blade.php
+│   ├── card.blade.php
+│   ├── modal.blade.php
+│   ├── table.blade.php
+│   └── ...
+└── blocks/                        # Block documentation (37 pages)
+    ├── admin-layout.blade.php
+    ├── login.blade.php
+    ├── marketing/                  # Hero, CTA, pricing, features, FAQ, etc.
+    ├── application/                # CRUD, tables, filters, navigation
+    ├── ecommerce/                  # Storefront, cart, checkout, orders
+    └── publisher/                  # Blog template, comments
+```
+
+## Documentation Pages
+
+### Components
+
+| Category | Pages |
+|----------|-------|
+| Core UI | Accordion, Alert, Avatar, Badge, Button, Card, Pricing Card, Spinner, Progress, Rating, Indicator |
+| Navigation | Breadcrumb, Navbar, Sidebar, Tabs, Pagination, Bottom Nav |
+| Overlays | Modal, Drawer, Dropdown, Popover, Tooltip, Toast, Speed Dial |
+| Data Display | Table, List Group, Timeline, Carousel, Gallery, Skeleton, Chat Bubble |
+| Forms | Input, Textarea, Select, Checkbox, Radio, Toggle, Range, File Input, Floating Label |
+| Content | Footer, Jumbotron, Banner, Kbd, Stepper, Video |
+
+### Blocks
+
+| Category | Pages |
+|----------|-------|
+| Marketing | Hero, Features, CTA, Pricing, Header, Footer, Social Proof, Testimonials, FAQ, Contact Form, Newsletter, Blog, Team, Error Pages, and more |
+| Application | Table Headers, Navigation, Filters, CRUD Modals, CRUD Drawers, CRUD Forms, CRUD Tables |
+| E-commerce | Storefront, Products, Cart, Checkout, Orders, Account, Services |
+| Publisher | Blog Template, Comments |
+
+## Page Structure
+
+Each documentation page follows a consistent pattern:
+
+```blade
+<x-layouts.app title="Component - Flowbite Blade">
+    <h1>Component Name</h1>
+    <p>Description</p>
+
+    @php
+    $code = <<<'BLADE'
+    <x-fwb.component prop="value" />
+    BLADE;
+    @endphp
+    <x-preview :code="$code" title="Example" />
+
+    {{-- Properties table --}}
+</x-layouts.app>
+```
+
+The `<x-preview>` component renders a live preview of the Blade code alongside the source.
+
+## Adding a Documentation Page
+
+1. Create the view in `resources/views/docs/` or `resources/views/blocks/`
+2. Add the route in `routes/web.php`
+3. Add the navigation link in the sidebar layout
+4. Follow the existing page structure with `<x-preview>` components
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+MIT
