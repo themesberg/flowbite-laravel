@@ -1,5 +1,5 @@
 <x-layouts.app title="Chat Bubble - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Chat Bubble</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Chat Bubble - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the chat bubble component to show messages in a chat-like interface.</p>
 
     @php

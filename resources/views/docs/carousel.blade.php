@@ -1,5 +1,5 @@
 <x-layouts.app title="Carousel - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Carousel</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Carousel - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the carousel component to slide through multiple elements and images using custom controls, indicators, and animations powered by Flowbite JS.</p>
 
     {{-- Default Slider --}}

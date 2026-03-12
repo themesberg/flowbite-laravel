@@ -1,5 +1,5 @@
 <x-layouts.app title="Gallery - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Gallery</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Gallery - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the gallery component to show multiple images in a responsive grid layout with support for different column counts and masonry layouts.</p>
 
     {{-- Default Gallery --}}

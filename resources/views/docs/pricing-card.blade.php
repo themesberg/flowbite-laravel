@@ -1,5 +1,5 @@
 <x-layouts.app title="Pricing Card - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Pricing Card</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Pricing Card - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the pricing card component to display pricing plans with a title, price, features list, and call-to-action button.</p>
 
     {{-- Default Pricing Card --}}

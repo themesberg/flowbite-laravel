@@ -1,5 +1,5 @@
 <x-layouts.app title="Textarea - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Textarea</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Textarea - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the textarea component for multi-line text input fields with support for labels, helper text, validation states, and a comment box layout with a footer slot.</p>
 
     {{-- Default Textarea --}}

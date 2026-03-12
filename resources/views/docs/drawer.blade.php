@@ -1,5 +1,5 @@
 <x-layouts.app title="Drawer - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Drawer</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Drawer - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the drawer component to show a panel that slides out from the edge of the page, which can be used for navigation, contact forms, or informational panels.</p>
 
     {{-- Default Drawer --}}

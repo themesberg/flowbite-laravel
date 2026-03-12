@@ -1,5 +1,5 @@
 <x-layouts.app title="Stepper - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Stepper</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Stepper - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the stepper component to show a multi-step process indicator with completed, current, and upcoming states for navigation and progress tracking.</p>
 
     {{-- Default Stepper --}}

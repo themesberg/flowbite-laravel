@@ -1,5 +1,5 @@
 <x-layouts.app title="Banner - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Banner</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Banner - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the banner component to show marketing messages, announcements, and CTA buttons at the top or bottom of your page, with dismissible functionality.</p>
 
     {{-- Default Sticky Banner --}}

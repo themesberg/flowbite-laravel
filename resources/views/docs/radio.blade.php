@@ -1,5 +1,5 @@
 <x-layouts.app title="Radio - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Radio</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Radio - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the radio component to select a single option from a group, with support for colors, helper text, disabled state, and various layout options.</p>
 
     {{-- Default Radio --}}

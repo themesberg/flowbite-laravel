@@ -1,5 +1,5 @@
 <x-layouts.app title="Breadcrumb - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Breadcrumb</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Breadcrumb - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Show the location of the current page in a hierarchical structure using the breadcrumb component.</p>
 
     {{-- Default Breadcrumb --}}

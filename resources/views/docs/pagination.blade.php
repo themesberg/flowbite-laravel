@@ -1,5 +1,5 @@
 <x-layouts.app title="Pagination - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Pagination</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Pagination - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the pagination component to indicate the number of pages with number links, previous and next buttons, and table data navigation variants.</p>
 
     {{-- Default Pagination --}}

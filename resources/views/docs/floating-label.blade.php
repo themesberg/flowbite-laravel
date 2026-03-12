@@ -1,5 +1,5 @@
 <x-layouts.app title="Floating Label - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Floating Label</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Floating Label - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the floating label style for inputs with animated labels.</p>
 
     @php

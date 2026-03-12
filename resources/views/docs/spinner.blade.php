@@ -1,5 +1,5 @@
 <x-layouts.app title="Spinner - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Spinner</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Spinner - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the spinner component as a loading indicator built with SVG and Tailwind CSS, available in multiple colors and sizes.</p>
 
     {{-- Default Spinner --}}

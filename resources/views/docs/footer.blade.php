@@ -1,5 +1,5 @@
 <x-layouts.app title="Footer - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Footer</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Footer - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the footer component to display navigation links, copyright information, social media icons, and sitemaps at the bottom of your pages.</p>
 
     {{-- Default Footer --}}

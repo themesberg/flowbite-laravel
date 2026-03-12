@@ -1,5 +1,5 @@
 <x-layouts.app title="Popover - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Popover</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Popover - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the popover component to show detailed information inside a pop-up box relative to the element that is being clicked or hovered over.</p>
 
     {{-- Default Popover --}}

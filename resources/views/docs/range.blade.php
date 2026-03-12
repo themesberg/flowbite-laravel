@@ -1,5 +1,5 @@
 <x-layouts.app title="Range - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Range</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Range - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the range slider input component to select a numeric value from a range of values with support for min/max limits, steps, sizes, and disabled state.</p>
 
     {{-- Default Range --}}

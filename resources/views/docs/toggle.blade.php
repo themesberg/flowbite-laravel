@@ -1,5 +1,5 @@
 <x-layouts.app title="Toggle - Flowbite Blade">
-    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Toggle</h1>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Toggle - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the toggle component to switch between two states such as on/off or enabled/disabled, with support for sizes, colors, and disabled state.</p>
 
     {{-- Default Toggle --}}
