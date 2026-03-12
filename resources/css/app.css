@@ -3,8 +3,8 @@
 @plugin 'flowbite/plugin';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../vendor/themesberg/flowbite-blade/resources/views/**/*.blade.php';
-@source '../../vendor/themesberg/flowbite-blade/src/**/*.php';
+@source '../../vendor/themesberg/flowbite-laravel-components/resources/views/**/*.blade.php';
+@source '../../vendor/themesberg/flowbite-laravel-components/src/**/*.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
