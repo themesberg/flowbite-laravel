@@ -1,4 +1,4 @@
-<x-layouts.app title="Checkout &amp; Payment - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Checkout &amp; Payment - E-commerce Blocks - Flowbite Blade" description="Complete the purchase flow with payment forms, checkout pages with delivery details, and order confirmation screens using Flowbite Blade blocks.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Checkout & Payment</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Complete the purchase flow with payment forms, checkout pages with delivery details, and order confirmation screens using Flowbite Blade block components.</p>
 

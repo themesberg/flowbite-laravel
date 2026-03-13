@@ -1,4 +1,4 @@
-<x-layouts.app title="Modal - Flowbite Blade">
+<x-layouts.app title="Modal - Flowbite Blade" description="Use the modal component to show interactive dialogs and notifications to your users as an overlay on top of the main content area of the page.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Modal - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the modal component to show interactive dialogs and notifications to your users as an overlay on top of the main content area of the page.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="CRUD Forms & Details - Application Blocks - Flowbite Blade">
+<x-layouts.app title="CRUD Forms & Details - Application Blocks - Flowbite Blade" description="Form-based and section-based CRUD blocks for creating, updating, and reading items, along with success message feedback in application interfaces.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">CRUD Forms & Details</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Form-based and section-based CRUD blocks for creating, updating, and reading items, along with success message feedback in application interfaces.</p>
 

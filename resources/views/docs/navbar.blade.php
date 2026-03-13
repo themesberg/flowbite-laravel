@@ -1,4 +1,4 @@
-<x-layouts.app title="Navbar - Flowbite Blade">
+<x-layouts.app title="Navbar - Flowbite Blade" description="The navbar component can be used to show a list of navigation links positioned on the top side of your page with support for responsive mobile menus and more.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Navbar - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">The navbar component can be used to show a list of navigation links positioned on the top side of your page with support for responsive mobile menus, branding, CTA buttons, and more.</p>
 

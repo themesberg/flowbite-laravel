@@ -1,4 +1,4 @@
-<x-layouts.app title="Error & Maintenance Pages - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Error & Maintenance Pages - Marketing Blocks - Flowbite Blade" description="Use error and maintenance page blocks to display user-friendly messages for 404, 500, and scheduled maintenance situations.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Error & Maintenance Pages</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use error and maintenance page blocks to display user-friendly messages for 404, 500, and scheduled maintenance situations.</p>
 

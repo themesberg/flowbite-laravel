@@ -1,4 +1,4 @@
-<x-layouts.app title="Team Sections - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Team Sections - Marketing Blocks - Flowbite Blade" description="Team block components for displaying team members in a horizontal card layout with images and social links, or a centered grid with avatars.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Team Sections</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Team block components for displaying team members in a horizontal card layout with images and social links, or a centered grid layout with rounded avatars.</p>
 

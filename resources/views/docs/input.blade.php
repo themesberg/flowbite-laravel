@@ -1,4 +1,4 @@
-<x-layouts.app title="Input - Flowbite Blade">
+<x-layouts.app title="Input - Flowbite Blade" description="Use the input component for text-based form fields including text, email, password, number, URL, and phone inputs with labels, helper text, and validation.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Input - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the input component for text-based form fields including text, email, password, number, URL, and phone inputs with support for labels, helper text, validation states, and icon addons.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Timeline - Flowbite Blade">
+<x-layouts.app title="Timeline - Flowbite Blade" description="Use the timeline component to show a series of events in chronological order with support for vertical and horizontal layouts.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Timeline - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the timeline component to show a series of events in chronological order with support for vertical and horizontal layouts.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Select - Flowbite Blade">
+<x-layouts.app title="Select - Flowbite Blade" description="Use the select component to allow users to choose one or more options from a dropdown list, with support for sizes, disabled state, and multiple selection.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Select - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the select component to allow users to choose one or more options from a dropdown list, with support for sizes, disabled state, underline variant, and multiple selection.</p>
 

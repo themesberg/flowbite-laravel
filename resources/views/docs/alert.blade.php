@@ -1,4 +1,4 @@
-<x-layouts.app title="Alert - Flowbite Blade">
+<x-layouts.app title="Alert - Flowbite Blade" description="Show contextual information to your users using alert elements based on Tailwind CSS, available in multiple colors, styles, and dismissible options.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Alert - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Show contextual information to your users using alert elements based on Tailwind CSS, available in multiple colors, styles, and dismissible options.</p>
 

@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://flowbite-blade.com/sitemap.xml

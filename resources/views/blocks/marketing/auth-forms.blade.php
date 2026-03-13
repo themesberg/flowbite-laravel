@@ -1,4 +1,4 @@
-<x-layouts.app title="Authentication Forms - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Authentication Forms - Marketing Blocks - Flowbite Blade" description="Use authentication form blocks for user registration, login, password reset, account recovery, and informational popups with branded layouts.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Authentication Forms</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use authentication form blocks for user registration, login, password reset, account recovery, and informational popups with branded layouts.</p>
 

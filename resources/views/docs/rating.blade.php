@@ -1,4 +1,4 @@
-<x-layouts.app title="Rating - Flowbite Blade">
+<x-layouts.app title="Rating - Flowbite Blade" description="Use the rating component to show reviews and testimonials from your users using stars, with support for half stars, text values, and review counts.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Rating - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the rating component to show reviews and testimonials from your users using stars, with support for half stars, text values, and review counts.</p>
 

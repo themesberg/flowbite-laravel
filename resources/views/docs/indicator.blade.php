@@ -1,4 +1,4 @@
-<x-layouts.app title="Indicator - Flowbite Blade">
+<x-layouts.app title="Indicator - Flowbite Blade" description="Use the indicator component to show status or notifications.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Indicator - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the indicator component to show status or notifications.</p>
 

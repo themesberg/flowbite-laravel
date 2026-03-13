@@ -1,4 +1,4 @@
-<x-layouts.app title="FAQ - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="FAQ - Marketing Blocks - Flowbite Blade" description="Use the FAQ block to display frequently asked questions in a two-column grid layout with question icons and organized answers.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">FAQ</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the FAQ block to display frequently asked questions in a two-column grid layout with question icons and organized answers.</p>
 

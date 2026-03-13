@@ -1,4 +1,4 @@
-<x-layouts.app title="Flowbite Blade Components">
+<x-layouts.app title="Flowbite Blade - Laravel Blade Components for Tailwind CSS" description="Flowbite Blade is a Laravel Blade component library with 50+ reusable UI components powered by Tailwind CSS and Flowbite. Install via Composer.">
     <div class="max-w-3xl">
         <h1 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Flowbite Blade Components</h1>
         <p class="mb-8 text-xl text-gray-500 dark:text-gray-400">

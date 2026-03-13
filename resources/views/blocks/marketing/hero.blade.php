@@ -1,4 +1,4 @@
-<x-layouts.app title="Hero Sections - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Hero Sections - Marketing Blocks - Flowbite Blade" description="Hero section components for landing pages with centered content, badge links, and call-to-action buttons, or side-by-side layouts with an image visual.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Hero Sections</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Hero section components for landing pages with centered content, badge links, and call-to-action buttons, or side-by-side layouts with an image visual.</p>
 

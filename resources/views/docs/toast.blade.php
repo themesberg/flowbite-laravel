@@ -1,4 +1,4 @@
-<x-layouts.app title="Toast - Flowbite Blade">
+<x-layouts.app title="Toast - Flowbite Blade" description="Use the toast component to show success or error messages.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Toast - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the toast component to show success or error messages.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="CRUD Modals - Application Blocks - Flowbite Blade">
+<x-layouts.app title="CRUD Modals - Application Blocks - Flowbite Blade" description="Modal-based CRUD operation blocks for creating, reading, updating, and deleting items in application interfaces.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">CRUD Modals</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Modal-based CRUD operation blocks for creating, reading, updating, and deleting items in application interfaces.</p>
 

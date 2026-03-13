@@ -6,6 +6,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sitemap.xml', function () {
+    $urls = collect(Route::getRoutes())
+        ->filter(fn ($route) => in_array('GET', $route->methods()) && $route->uri() !== 'sitemap.xml' && !str_starts_with($route->uri(), '_'))
+        ->map(fn ($route) => url($route->uri()));
+
+    return response()->view('sitemap', ['urls' => $urls])->header('Content-Type', 'application/xml');
+});
+
 // Phase 1 — Core UI
 Route::get('/docs/accordion', fn () => view('docs.accordion'));
 Route::get('/docs/alert', fn () => view('docs.alert'));

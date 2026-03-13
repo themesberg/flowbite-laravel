@@ -1,4 +1,4 @@
-<x-layouts.app title="Contact Form - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Contact Form - Marketing Blocks - Flowbite Blade" description="Use the contact form block to let visitors reach out with questions, feedback, or support requests through a simple and clean form layout.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Contact Form</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the contact form block to let visitors reach out with questions, feedback, or support requests through a simple and clean form layout.</p>
 

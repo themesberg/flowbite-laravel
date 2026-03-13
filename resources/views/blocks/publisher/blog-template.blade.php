@@ -1,4 +1,4 @@
-<x-layouts.app title="Blog Template - Publisher Blocks - Flowbite Blade">
+<x-layouts.app title="Blog Template - Publisher Blocks - Flowbite Blade" description="A full blog post template with article content, author info, sidebar, related posts, and share buttons.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Blog Template</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">A full blog post template with article content, author info, sidebar, related posts, and share buttons.</p>
 

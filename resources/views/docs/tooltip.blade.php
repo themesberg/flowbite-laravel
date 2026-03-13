@@ -1,4 +1,4 @@
-<x-layouts.app title="Tooltip - Flowbite Blade">
+<x-layouts.app title="Tooltip - Flowbite Blade" description="Use tooltips to show extra information when hovering over an element.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Tooltip - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use tooltips to show extra information when hovering over an element.</p>
 

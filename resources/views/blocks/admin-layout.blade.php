@@ -1,4 +1,4 @@
-<x-layouts.app title="Admin Layout - Flowbite Blade Blocks">
+<x-layouts.app title="Admin Layout - Flowbite Blade Blocks" description="A full-page admin layout with a fixed navbar, collapsible sidebar, and main content area. Includes user dropdown, dark mode, and responsive toggle.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Admin Layout</h1>
     <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">A full-page admin layout with a fixed navbar, collapsible sidebar, and main content area. Includes a user dropdown menu, dark mode support, and responsive mobile sidebar toggle.</p>
 

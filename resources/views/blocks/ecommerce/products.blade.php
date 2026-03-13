@@ -1,4 +1,4 @@
-<x-layouts.app title="Products - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Products - E-commerce Blocks - Flowbite Blade" description="Browse and display products using category grids, product cards, detailed overviews, informational descriptions, and customer reviews.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Products</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Browse and display products using category grids, product cards, detailed overviews, informational descriptions, and customer reviews built with Flowbite Blade blocks.</p>
 

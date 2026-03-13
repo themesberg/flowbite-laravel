@@ -1,4 +1,4 @@
-<x-layouts.app title="Avatar - Flowbite Blade">
+<x-layouts.app title="Avatar - Flowbite Blade" description="Use the avatar component to show a visual representation of a user profile using an image, initials, or a placeholder icon.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Avatar - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the avatar component to show a visual representation of a user profile using an image, initials, or a placeholder icon.</p>
 

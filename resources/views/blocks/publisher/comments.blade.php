@@ -1,4 +1,4 @@
-<x-layouts.app title="Comments - Publisher Blocks - Flowbite Blade">
+<x-layouts.app title="Comments - Publisher Blocks - Flowbite Blade" description="A comment section with a form for posting comments and support for nested replies.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Comments</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">A comment section with a form for posting comments and support for nested replies.</p>
 

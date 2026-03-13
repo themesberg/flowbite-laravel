@@ -1,4 +1,4 @@
-<x-layouts.app title="File Input - Flowbite Blade">
+<x-layouts.app title="File Input - Flowbite Blade" description="Use the file input component to allow users to upload one or more files, with support for sizes, helper text, multiple file uploads, and dropzone.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">File Input - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the file input component to allow users to upload one or more files, with support for sizes, helper text, multiple file uploads, and a drag-and-drop dropzone variant.</p>
 

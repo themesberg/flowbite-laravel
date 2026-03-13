@@ -1,4 +1,4 @@
-<x-layouts.app title="Cart &amp; Summary - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Cart &amp; Summary - E-commerce Blocks - Flowbite Blade" description="Manage shopping cart items, display order summaries, and offer discount codes using Flowbite Blade e-commerce block components.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Cart & Summary</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Manage shopping cart items, display order summaries, and offer discount codes using Flowbite Blade e-commerce block components.</p>
 

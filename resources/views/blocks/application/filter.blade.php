@@ -1,4 +1,4 @@
-<x-layouts.app title="Filters & Search - Application Blocks - Flowbite Blade">
+<x-layouts.app title="Filters & Search - Application Blocks - Flowbite Blade" description="Filter and faceted search blocks for building product filtering interfaces with dropdowns, modals, drawers, and toggle panels.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Filters & Search</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Filter and faceted search blocks for building product filtering interfaces with dropdowns, modals, drawers, and toggle panels.</p>
 

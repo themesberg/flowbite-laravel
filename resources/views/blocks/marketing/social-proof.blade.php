@@ -1,4 +1,4 @@
-<x-layouts.app title="Social Proof - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Social Proof - Marketing Blocks - Flowbite Blade" description="Use social proof and customer logo blocks to build trust and credibility with your audience by showcasing statistics and brand partnerships.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Social Proof</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use social proof and customer logo blocks to build trust and credibility with your audience by showcasing statistics and brand partnerships.</p>
 

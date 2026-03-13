@@ -1,4 +1,4 @@
-<x-layouts.app title="Login Block - Flowbite Blade Blocks">
+<x-layouts.app title="Login Block - Flowbite Blade Blocks" description="A login page with email, password, remember me checkbox, and links to forgot password and registration.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Login</h1>
     <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">A login page with email, password, remember me checkbox, and links to forgot password and registration. Designed to be used inside <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">x-fwb.layouts.auth</code>.</p>
 

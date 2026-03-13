@@ -1,4 +1,4 @@
-<x-layouts.app title="Content Sections - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Content Sections - Marketing Blocks - Flowbite Blade" description="Content block components for displaying long-form text with a CTA link, or a side-by-side layout pairing text content with images.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Content Sections</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Content block components for displaying long-form text with a CTA link, or a side-by-side layout pairing text content with images.</p>
 

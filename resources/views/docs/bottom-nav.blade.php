@@ -1,4 +1,4 @@
-<x-layouts.app title="Bottom Navigation - Flowbite Blade">
+<x-layouts.app title="Bottom Navigation - Flowbite Blade" description="Use the bottom navigation bar component to provide navigation links at the bottom of the page.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Bottom Navigation - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the bottom navigation bar component to provide navigation links at the bottom of the page.</p>
 

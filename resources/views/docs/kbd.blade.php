@@ -1,4 +1,4 @@
-<x-layouts.app title="KBD - Flowbite Blade">
+<x-layouts.app title="KBD - Flowbite Blade" description="Use the KBD component to indicate keyboard inputs and shortcuts in your documentation and tutorials.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">KBD (Keyboard) - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the KBD component to indicate keyboard inputs and shortcuts in your documentation and tutorials.</p>
 

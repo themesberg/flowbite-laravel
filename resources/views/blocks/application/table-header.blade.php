@@ -1,4 +1,4 @@
-<x-layouts.app title="Table Headers - Application Blocks - Flowbite Blade">
+<x-layouts.app title="Table Headers - Application Blocks - Flowbite Blade" description="Table header and footer blocks for search, filtering, pagination, and action buttons in data tables.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Table Headers</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Table header and footer blocks for search, filtering, pagination, and action buttons in data tables.</p>
 

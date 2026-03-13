@@ -1,4 +1,4 @@
-<x-layouts.app title="Dropdown - Flowbite Blade">
+<x-layouts.app title="Dropdown - Flowbite Blade" description="Get started with the dropdown component to show a list of menu items when clicking on a trigger element based on multiple layouts, styles, and placements.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Dropdown - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Get started with the dropdown component to show a list of menu items when clicking on a trigger element based on multiple layouts, styles, and placements.</p>
 

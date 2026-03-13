@@ -1,4 +1,4 @@
-<x-layouts.app title="Badge - Flowbite Blade">
+<x-layouts.app title="Badge - Flowbite Blade" description="Use the badge component to highlight important information, show notification counts, or label content with color-coded indicators.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Badge - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the badge component to highlight important information, show notification counts, or label content with color-coded indicators.</p>
 

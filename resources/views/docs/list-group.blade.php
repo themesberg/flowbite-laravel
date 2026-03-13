@@ -1,4 +1,4 @@
-<x-layouts.app title="List Group - Flowbite Blade">
+<x-layouts.app title="List Group - Flowbite Blade" description="Use the list group component to display a series of items, links, or buttons in a vertical list format with support for icons, active states, and disabled items.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">List Group - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the list group component to display a series of items, links, or buttons in a vertical list format with support for icons, active states, and disabled items.</p>
 

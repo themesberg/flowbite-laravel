@@ -1,4 +1,4 @@
-<x-layouts.app title="Storefront - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Storefront - E-commerce Blocks - Flowbite Blade" description="Build a complete e-commerce storefront using hero sections, promotional banners, navigation bars, and mega footers with Flowbite Blade block components.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Storefront</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Build a complete e-commerce storefront using hero sections, promotional banners, navigation bars, and mega footers with Flowbite Blade block components.</p>
 

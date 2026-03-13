@@ -1,4 +1,4 @@
-<x-layouts.app title="Header - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Header - Marketing Blocks - Flowbite Blade" description="A responsive navigation header component with brand logo, navigation links, and action buttons for marketing pages.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Header</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">A responsive navigation header component with brand logo, navigation links, and action buttons for marketing pages.</p>
 

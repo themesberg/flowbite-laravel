@@ -1,4 +1,4 @@
-<x-layouts.app title="Tabs - Flowbite Blade">
+<x-layouts.app title="Tabs - Flowbite Blade" description="Use the tabs component to navigate between grouped content by switching between tabs, available in multiple styles including default, underline, and pills.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Tabs - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the tabs component to navigate between grouped content by switching between tabs, available in multiple styles including default, underline, pills, and full-width variants.</p>
 

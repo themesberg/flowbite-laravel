@@ -1,4 +1,4 @@
-<x-layouts.app title="Footer Sections - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Footer Sections - Marketing Blocks - Flowbite Blade" description="Footer block components for marketing pages with a centered brand logo and links, or a sitemap-style footer with column navigation and social icons.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Footer Sections</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Footer block components for marketing pages. Includes a centered footer with brand logo and links, and a sitemap-style footer with column-based navigation and social icons.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Newsletter & Banner - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Newsletter & Banner - Marketing Blocks - Flowbite Blade" description="Use newsletter and banner blocks to capture email subscriptions and display important announcements or promotional messages to your visitors.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Newsletter & Banner</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use newsletter and banner blocks to capture email subscriptions and display important announcements or promotional messages to your visitors.</p>
 

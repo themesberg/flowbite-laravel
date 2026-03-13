@@ -1,9 +1,25 @@
+@props(['description' => 'Flowbite Blade is a Laravel Blade component library for Flowbite. Reusable, configurable UI components powered by Tailwind CSS.'])
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'Flowbite Blade Components' }}</title>
+    <title>{{ $title ?? 'Flowbite Blade - Laravel Blade Components for Tailwind CSS' }}</title>
+    <meta name="description" content="{{ $description }}">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Open Graph --}}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $title ?? 'Flowbite Blade - Laravel Blade Components' }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Flowbite Blade">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $title ?? 'Flowbite Blade - Laravel Blade Components' }}">
+    <meta name="twitter:description" content="{{ $description }}">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="h-full bg-white dark:bg-gray-900">

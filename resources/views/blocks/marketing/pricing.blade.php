@@ -1,4 +1,4 @@
-<x-layouts.app title="Pricing - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Pricing - Marketing Blocks - Flowbite Blade" description="A pricing section component with a heading, description, and a three-column grid for pricing cards.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Pricing</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">A pricing section component with a heading, description, and a three-column grid for pricing cards. Use the <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">x-fwb.pricing-card</code> component inside the default slot.</p>
 

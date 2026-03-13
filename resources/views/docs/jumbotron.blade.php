@@ -1,4 +1,4 @@
-<x-layouts.app title="Jumbotron - Flowbite Blade">
+<x-layouts.app title="Jumbotron - Flowbite Blade" description="Use the jumbotron component as a full-width hero section with a title, subtitle, and call-to-action buttons to promote your website content.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Jumbotron - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the jumbotron component as a full-width hero section with a title, subtitle, and call-to-action buttons to promote your website content.</p>
 

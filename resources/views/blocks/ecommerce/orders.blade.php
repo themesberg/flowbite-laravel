@@ -1,4 +1,4 @@
-<x-layouts.app title="Orders - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Orders - E-commerce Blocks - Flowbite Blade" description="View and manage customer orders with an overview list and detailed tracking timeline using Flowbite Blade e-commerce block components.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Orders</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">View and manage customer orders with an overview list and detailed tracking timeline using Flowbite Blade e-commerce block components.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Speed Dial - Flowbite Blade">
+<x-layouts.app title="Speed Dial - Flowbite Blade" description="Use the speed dial component to show a list of action buttons.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Speed Dial - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the speed dial component to show a list of action buttons.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="CTA Sections - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="CTA Sections - Marketing Blocks - Flowbite Blade" description="Call-to-action block components in various layouts: a simple text CTA, an image-based CTA with side-by-side layout, and a centered heading CTA.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">CTA Sections</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Call-to-action block components in various layouts: a simple text CTA, an image-based CTA with side-by-side layout, and a centered heading CTA.</p>
 

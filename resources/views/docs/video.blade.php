@@ -1,4 +1,4 @@
-<x-layouts.app title="Video - Flowbite Blade">
+<x-layouts.app title="Video - Flowbite Blade" description="Use the video component to embed native HTML5 video players with controls, autoplay, muted options, and various sizing configurations.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Video - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the video component to embed native HTML5 video players with controls, autoplay, muted options, and various sizing configurations.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Progress - Flowbite Blade">
+<x-layouts.app title="Progress - Flowbite Blade" description="Use the progress bar component to show the completion rate of a data indicator or use it as a loader element, available in multiple sizes, colors, and labels.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Progress Bar - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the progress bar component to show the completion rate of a data indicator or use it as a loader element, available in multiple sizes, colors, and label options.</p>
 

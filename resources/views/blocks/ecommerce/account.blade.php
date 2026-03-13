@@ -1,4 +1,4 @@
-<x-layouts.app title="Account - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Account - E-commerce Blocks - Flowbite Blade" description="Display customer account information with profile details, delivery addresses, payment methods, and review history using Flowbite Blade blocks.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Account</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Display customer account information with profile details, delivery addresses, payment methods, and review history using Flowbite Blade block components.</p>
 

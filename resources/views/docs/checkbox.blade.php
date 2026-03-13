@@ -1,4 +1,4 @@
-<x-layouts.app title="Checkbox - Flowbite Blade">
+<x-layouts.app title="Checkbox - Flowbite Blade" description="Use the checkbox component to select one or more options from a list, with support for colors, helper text, disabled state, and various layout options.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Checkbox - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the checkbox component to select one or more options from a list, with support for colors, helper text, disabled state, and various layout options.</p>
 

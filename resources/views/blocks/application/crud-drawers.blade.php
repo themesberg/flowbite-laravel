@@ -1,4 +1,4 @@
-<x-layouts.app title="CRUD Drawers - Application Blocks - Flowbite Blade">
+<x-layouts.app title="CRUD Drawers - Application Blocks - Flowbite Blade" description="Drawer-based CRUD operation blocks for creating, reading, and updating items using slide-out panels.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">CRUD Drawers</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Drawer-based CRUD operation blocks for creating, reading, and updating items using slide-out panels.</p>
 

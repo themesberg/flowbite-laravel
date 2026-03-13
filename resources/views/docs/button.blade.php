@@ -1,4 +1,4 @@
-<x-layouts.app title="Button - Flowbite Blade">
+<x-layouts.app title="Button - Flowbite Blade" description="Use the button component inside forms, as links, social login buttons, and more with support for multiple colors, sizes, and states.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Button - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the button component inside forms, as links, social login buttons, and more with support for multiple colors, sizes, and states.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Testimonials - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Testimonials - Marketing Blocks - Flowbite Blade" description="Use testimonial blocks to showcase customer feedback with quote-style single testimonials or card-based grid layouts for multiple reviews.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Testimonials</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use testimonial blocks to showcase customer feedback with quote-style single testimonials or card-based grid layouts for multiple reviews.</p>
 

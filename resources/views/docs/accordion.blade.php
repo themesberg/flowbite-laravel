@@ -1,4 +1,4 @@
-<x-layouts.app title="Accordion - Flowbite Blade">
+<x-layouts.app title="Accordion - Flowbite Blade" description="Use the accordion component to show and hide content based on a collapsible element, useful for FAQ sections, navigation menus, and more.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Accordion - Laravel Blade</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use the accordion component to show and hide content based on a collapsible element, useful for FAQ sections, navigation menus, and more.</p>
 

@@ -1,4 +1,4 @@
-<x-layouts.app title="Feature Section - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Feature Section - Marketing Blocks - Flowbite Blade" description="Feature section component to showcase product capabilities in a responsive grid layout with icons, titles, and descriptions.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Feature Section</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Feature section component to showcase product capabilities in a responsive grid layout with icons, titles, and descriptions. Use the <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded">x-fwb.blocks.marketing.feature.item</code> sub-component inside the default slot.</p>
 

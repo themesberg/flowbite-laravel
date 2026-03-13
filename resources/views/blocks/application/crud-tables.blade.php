@@ -1,4 +1,4 @@
-<x-layouts.app title="CRUD Tables - Application Blocks - Flowbite Blade">
+<x-layouts.app title="CRUD Tables - Application Blocks - Flowbite Blade" description="Table-based CRUD blocks for listing, searching, and managing items with built-in pagination, filters, and action controls.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">CRUD Tables</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Table-based CRUD blocks for listing, searching, and managing items with built-in pagination, filters, and action controls in application interfaces.</p>
 

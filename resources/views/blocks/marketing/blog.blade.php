@@ -1,4 +1,4 @@
-<x-layouts.app title="Blog, Portfolio & Events - Marketing Blocks - Flowbite Blade">
+<x-layouts.app title="Blog, Portfolio & Events - Marketing Blocks - Flowbite Blade" description="Use blog, portfolio, and event schedule blocks to showcase articles, case studies, and conference or event agendas on your marketing pages.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Blog, Portfolio & Events</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Use blog, portfolio, and event schedule blocks to showcase articles, case studies, and conference or event agendas on your marketing pages.</p>
 

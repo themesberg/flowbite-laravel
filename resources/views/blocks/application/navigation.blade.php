@@ -1,4 +1,4 @@
-<x-layouts.app title="Navigation - Application Blocks - Flowbite Blade">
+<x-layouts.app title="Navigation - Application Blocks - Flowbite Blade" description="Application navigation blocks including sidebars, shells, navbars, and dashboard footers for building admin panel layouts.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Navigation</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Application navigation blocks including sidebars, shells, navbars, and dashboard footers for building admin panel layouts.</p>
 

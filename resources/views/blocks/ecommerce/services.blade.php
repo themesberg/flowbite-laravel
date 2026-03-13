@@ -1,4 +1,4 @@
-<x-layouts.app title="Services &amp; Refunds - E-commerce Blocks - Flowbite Blade">
+<x-layouts.app title="Services &amp; Refunds - E-commerce Blocks - Flowbite Blade" description="Handle refund requests, track refund statuses, manage customer service inquiries, view warranties, and submit service repair forms.">
     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Services & Refunds</h1>
     <p class="mb-8 text-lg text-gray-500 dark:text-gray-400">Handle refund requests, track refund statuses, manage customer service inquiries, view warranties, and submit service repair forms with Flowbite Blade block components.</p>
 
