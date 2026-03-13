@@ -12,6 +12,16 @@
             <pre class="p-4 mt-2 bg-gray-50 dark:bg-gray-900 rounded-lg text-sm overflow-x-auto"><code>npm install flowbite</code></pre>
         </div>
 
+        <div class="mb-8 p-4 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
+            <h2 class="mb-2 text-lg font-bold text-gray-900 dark:text-white">Or use the Starter Kit</h2>
+            <p class="mb-3 text-gray-500 dark:text-gray-400">Get started faster with a pre-configured Laravel project that includes Flowbite Blade, Tailwind CSS, authentication, and more — all ready to go.</p>
+            <a href="https://github.com/themesberg/flowbite-laravel-starter-kit" target="_blank" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-500 hover:underline font-medium">
+                <x-fwb-s-github class="w-5 h-5" />
+                Flowbite Laravel Starter Kit
+                <x-fwb-o-arrow-up-right-from-square class="w-4 h-4" />
+            </a>
+        </div>
+
         <div class="mb-8">
             <h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Usage</h2>
             <p class="mb-4 text-gray-500 dark:text-gray-400">All components use the <code class="text-sm bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded">fwb</code> prefix (configurable):</p>
