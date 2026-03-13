@@ -208,11 +208,91 @@
 </aside>
 
 {{-- Main Content --}}
-<div class="p-4 sm:ml-64">
-    <div class="p-4 mt-14">
+<div class="p-4 sm:ml-64 xl:mr-64">
+    <div class="p-4 mt-14" id="main-content">
         {{ $slot }}
     </div>
 </div>
+
+{{-- Table of Contents --}}
+<aside class="fixed top-0 right-0 z-40 hidden xl:block w-64 h-screen pt-20" aria-label="Table of contents">
+    <div class="h-full px-4 pb-4 overflow-y-auto">
+        <h4 class="mb-3 text-xs font-semibold text-gray-500 uppercase dark:text-gray-400">On this page</h4>
+        <nav id="toc">
+            <ul class="space-y-1 text-sm border-l border-gray-200 dark:border-gray-700"></ul>
+        </nav>
+    </div>
+</aside>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tocList = document.querySelector('#toc ul');
+    const mainContent = document.getElementById('main-content');
+    if (!tocList || !mainContent) return;
+
+    // Collect all h2 headings inside main content
+    const headings = mainContent.querySelectorAll('h2');
+    if (headings.length === 0) {
+        tocList.closest('aside').style.display = 'none';
+        document.querySelector('.sm\\:ml-64.xl\\:mr-64')?.classList.remove('xl:mr-64');
+        return;
+    }
+
+    // Build TOC links
+    headings.forEach(function (heading, i) {
+        // Ensure heading has an id
+        if (!heading.id) {
+            heading.id = 'section-' + i;
+        }
+
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = '#' + heading.id;
+        a.textContent = heading.textContent;
+        a.className = 'block py-1 pl-3 -ml-px border-l-2 border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:border-gray-300 dark:hover:border-gray-500 transition-colors';
+        a.setAttribute('data-toc-target', heading.id);
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    // Scroll spy with IntersectionObserver
+    var tocLinks = tocList.querySelectorAll('a[data-toc-target]');
+    var activeClasses = ['border-blue-600', 'dark:border-blue-500', 'text-blue-600', 'dark:text-blue-500', 'font-medium'];
+    var inactiveClasses = ['border-transparent', 'text-gray-500', 'dark:text-gray-400'];
+
+    function setActive(id) {
+        tocLinks.forEach(function (link) {
+            if (link.getAttribute('data-toc-target') === id) {
+                inactiveClasses.forEach(function (c) { link.classList.remove(c); });
+                activeClasses.forEach(function (c) { link.classList.add(c); });
+            } else {
+                activeClasses.forEach(function (c) { link.classList.remove(c); });
+                inactiveClasses.forEach(function (c) { link.classList.add(c); });
+            }
+        });
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                setActive(entry.target.id);
+            }
+        });
+    }, {
+        rootMargin: '-80px 0px -60% 0px',
+        threshold: 0
+    });
+
+    headings.forEach(function (heading) {
+        observer.observe(heading);
+    });
+
+    // Set first heading as active by default
+    if (headings.length > 0) {
+        setActive(headings[0].id);
+    }
+});
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQVDNXBR6C"></script>
 <script>

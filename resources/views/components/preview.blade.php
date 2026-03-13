@@ -1,6 +1,6 @@
 <div class="mb-12">
     @if($title)
-        <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">{{ $title }}</h2>
+        <h2 id="{{ \Illuminate\Support\Str::slug($title) }}" class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">{{ $title }}</h2>
     @endif
     <div class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
         {!! $renderedCode() !!}
